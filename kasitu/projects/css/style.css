@@ -129,3 +129,5 @@ body.dark .filter{border-color:rgba(255,255,255,.12);color:#cbd4df}body.dark .fi
   background: #0b1220;
   border-color: rgba(229, 231, 235, 0.3);
 }
+
+.logo-image{display:flex;align-items:center;justify-content:center;overflow:hidden}.logo-image img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}

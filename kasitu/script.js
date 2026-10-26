@@ -1002,7 +1002,7 @@ const packagePrices = {
 
 "Business Website": 4999,
 
-"Online Store": 5999,
+"Online Store": 7499,
 
 "Online Store Premium": 11999
 
