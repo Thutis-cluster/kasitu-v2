@@ -1,0 +1,1610 @@
+/* ==========================================
+   KASITU WEBS
+   PROJECT VIEWER
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(0, 180, 255, 0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(120, 80, 255, 0.08),
+            transparent 35%
+        ),
+        #070b14;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+}
+
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.background-glow {
+
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    pointer-events: none;
+
+    opacity: 0.15;
+
+    z-index: -1;
+
+}
+
+
+.glow-one {
+
+    top: -250px;
+    left: -250px;
+
+    background: #008cff;
+
+}
+
+
+.glow-two {
+
+    bottom: -250px;
+    right: -250px;
+
+    background: #7c3cff;
+
+}
+
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.project-nav {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 25px 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.brand {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+}
+
+
+.brand span {
+
+    font-weight: 800;
+
+}
+
+
+.back-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.04);
+
+    transition: 0.3s;
+
+}
+
+
+.back-btn:hover {
+
+    background: rgba(255,255,255,0.09);
+
+    transform: translateX(-3px);
+
+}
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.project-page {
+
+    width: 90%;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.project-header {
+
+    text-align: center;
+
+    padding: 80px 10px 50px;
+
+}
+
+
+.project-category {
+
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border: 1px solid rgba(0, 180, 255, 0.3);
+
+    border-radius: 30px;
+
+    color: #55c8ff;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.project-header h1 {
+
+    font-size: clamp(2.2rem, 5vw, 4rem);
+
+    margin-bottom: 20px;
+
+}
+
+
+.project-description {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #a9b2c3;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+
+}
+
+
+/* ==========================================
+   TECHNOLOGIES
+========================================== */
+
+.project-tech {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.project-tech span {
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    font-size: 0.8rem;
+
+    color: #dbe4f3;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.project-actions {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.primary-btn {
+
+    border: none;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #007bff,
+        #5b2cff
+    );
+
+}
+
+
+.primary-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(0,120,255,0.25);
+
+}
+
+
+.secondary-btn {
+
+    color: #ffffff;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+}
+
+
+.secondary-btn:hover {
+
+    background: rgba(255,255,255,0.1);
+
+}
+
+
+/* ==========================================
+   PROJECT DETAILS
+========================================== */
+
+.project-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 100px;
+
+}
+
+
+.detail-card {
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.035);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+}
+
+
+.detail-card i {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 15px;
+
+    display: block;
+
+    color: #4dbfff;
+
+}
+
+
+.detail-card span {
+
+    display: block;
+
+    color: #8d98aa;
+
+    font-size: 0.8rem;
+
+    margin-bottom: 6px;
+
+}
+
+
+.detail-card strong {
+
+    font-size: 0.95rem;
+
+}
+
+
+.online {
+
+    color: #45e69b;
+
+}
+
+
+.online i {
+
+    display: inline;
+
+    font-size: 0.45rem;
+
+    color: #45e69b;
+
+    margin: 0;
+
+}
+
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.features-section {
+
+    margin-bottom: 100px;
+
+}
+
+
+.section-heading span,
+.live-heading span {
+
+    color: #4dbfff;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+}
+
+
+.section-heading h2,
+.live-heading h2 {
+
+    margin-top: 8px;
+
+    font-size: 2rem;
+
+}
+
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.features-grid {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.feature-item {
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.035);
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+}
+
+
+.feature-item i {
+
+    color: #4dbfff;
+
+    margin-right: 8px;
+
+}
+
+
+/* ==========================================
+   LIVE DEMO
+========================================== */
+
+.live-section {
+
+    margin-bottom: 100px;
+
+}
+
+
+.live-heading {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+}
+
+
+.live-status {
+
+    color: #45e69b;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+.live-status i {
+
+    font-size: 0.45rem;
+
+}
+
+
+/* ==========================================
+   BROWSER WINDOW
+========================================== */
+
+.browser-window {
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    background: #0d111b;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.4);
+
+}
+
+
+.browser-bar {
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #111722;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+
+.browser-dots {
+
+    display: flex;
+
+    gap: 6px;
+
+}
+
+
+.browser-dots span {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #525b6b;
+
+}
+
+
+.browser-url {
+
+    flex: 1;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 7px 15px;
+
+    border-radius: 6px;
+
+    background: rgba(255,255,255,0.05);
+
+    color: #8f9aad;
+
+    font-size: 0.75rem;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* ==========================================
+   IFRAME
+========================================== */
+
+.iframe-container {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 800px;
+
+    background: #ffffff;
+
+}
+
+
+#project-frame {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    display: block;
+
+}
+
+
+.iframe-loader {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #0d111b;
+
+    color: #ffffff;
+
+    transition: opacity 0.4s;
+
+}
+
+
+.iframe-loader.hidden {
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+
+.loader-spinner {
+
+    width: 38px;
+
+    height: 38px;
+
+    border: 3px solid rgba(255,255,255,0.15);
+
+    border-top-color: #4dbfff;
+
+    border-radius: 50%;
+
+    animation: spin 0.8s linear infinite;
+
+    margin-bottom: 15px;
+
+}
+
+
+@keyframes spin {
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/* ==========================================
+   LIVE ACTION
+========================================== */
+
+.live-actions {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: #7f899a;
+
+    font-size: 0.85rem;
+
+}
+
+
+footer strong {
+
+    color: #ffffff;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .project-nav {
+
+        padding: 20px;
+
+    }
+
+
+    .project-page {
+
+        width: 92%;
+
+    }
+
+
+    .project-header {
+
+        padding-top: 50px;
+
+    }
+
+
+    .project-details {
+
+        grid-template-columns: 1fr;
+
+        margin-bottom: 70px;
+
+    }
+
+
+    .features-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .live-heading {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+
+    }
+
+
+    .iframe-container {
+
+        height: 650px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .brand {
+
+        font-size: 1.15rem;
+
+    }
+
+
+    .back-btn {
+
+        padding: 8px 12px;
+
+        font-size: 0.75rem;
+
+    }
+
+
+    .project-header h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .project-actions {
+
+        flex-direction: column;
+
+    }
+
+
+    .primary-btn,
+    .secondary-btn {
+
+        width: 100%;
+
+    }
+
+
+    .iframe-container {
+
+        height: 600px;
+
+    }
+
+}
+
+
+/* ==========================================
+   THEME TOGGLE / NAV ACTIONS
+========================================== */
+
+.project-nav-actions {
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.theme-toggle {
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    cursor:pointer;
+    font-size:1.05rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s ease;
+}
+
+.theme-toggle:hover {
+    transform:translateY(-2px);
+    background:rgba(255,255,255,.10);
+}
+
+/* ==========================================
+   KASITU WEBS
+   PREMIUM LIGHT MODE
+   Project Viewer
+========================================== */
+
+[data-theme="light"] body {
+
+    background:
+        radial-gradient(
+            circle at 8% 8%,
+            rgba(6, 182, 212, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 92% 85%,
+            rgba(79, 70, 229, 0.07),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #f4f7fb
+        );
+
+    color: #172033;
+
+}
+
+
+/* ==========================================
+   BACKGROUND GLOWS
+========================================== */
+
+[data-theme="light"] .background-glow {
+
+    opacity: 0.08;
+
+}
+
+[data-theme="light"] .glow-one {
+
+    background: #06b6d4;
+
+}
+
+[data-theme="light"] .glow-two {
+
+    background: #6366f1;
+
+}
+
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+[data-theme="light"] .project-nav {
+
+    background: transparent;
+
+}
+
+
+[data-theme="light"] .brand {
+
+    color: #172033;
+
+    letter-spacing: -0.3px;
+
+}
+
+
+[data-theme="light"] .brand span {
+
+    color: #0891b2;
+
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+[data-theme="light"] .back-btn {
+
+    color: #243047;
+
+    background:
+        rgba(255, 255, 255, 0.82);
+
+    border: 1px solid
+        rgba(15, 23, 42, 0.09);
+
+    box-shadow:
+        0 8px 25px
+        rgba(15, 23, 42, 0.055);
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+[data-theme="light"] .back-btn:hover {
+
+    color: #0891b2;
+
+    background: #ffffff;
+
+    border-color:
+        rgba(6, 182, 212, 0.22);
+
+    box-shadow:
+        0 12px 30px
+        rgba(15, 23, 42, 0.09);
+
+    transform:
+        translateX(-4px);
+
+}
+
+
+/* ==========================================
+   THEME TOGGLE
+========================================== */
+
+[data-theme="light"] .theme-toggle {
+
+    color: #26344d;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    border: 1px solid
+        rgba(15, 23, 42, 0.09);
+
+    box-shadow:
+        0 8px 25px
+        rgba(15, 23, 42, 0.07);
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+[data-theme="light"] .theme-toggle:hover {
+
+    color: #0891b2;
+
+    background: #ffffff;
+
+    border-color:
+        rgba(6, 182, 212, 0.25);
+
+    transform:
+        translateY(-2px)
+        rotate(8deg);
+
+}
+
+
+/* ==========================================
+   PROJECT HEADER
+========================================== */
+
+[data-theme="light"] .project-header h1 {
+
+    color: #111827;
+
+}
+
+
+[data-theme="light"] .project-description {
+
+    color: #667085;
+
+}
+
+
+/* ==========================================
+   PROJECT CATEGORY
+========================================== */
+
+[data-theme="light"] .project-category {
+
+    color: #087f9f;
+
+    background:
+        rgba(255, 255, 255, 0.78);
+
+    border:
+        1px solid
+        rgba(6, 182, 212, 0.22);
+
+    box-shadow:
+        0 6px 20px
+        rgba(6, 182, 212, 0.06);
+
+}
+
+
+/* ==========================================
+   TECHNOLOGY BADGES
+========================================== */
+
+[data-theme="light"] .project-tech span {
+
+    color: #344054;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    border:
+        1px solid
+        rgba(15, 23, 42, 0.08);
+
+    box-shadow:
+        0 5px 18px
+        rgba(15, 23, 42, 0.045);
+
+}
+
+
+[data-theme="light"] .project-tech span:hover {
+
+    color: #087f9f;
+
+    border-color:
+        rgba(6, 182, 212, 0.25);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* ==========================================
+   PRIMARY BUTTON
+========================================== */
+
+[data-theme="light"] .primary-btn {
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0891b2,
+            #4f46e5
+        );
+
+    box-shadow:
+        0 10px 25px
+        rgba(79, 70, 229, 0.18);
+
+}
+
+
+[data-theme="light"] .primary-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 16px 35px
+        rgba(79, 70, 229, 0.24);
+
+}
+
+
+/* ==========================================
+   SECONDARY BUTTON
+========================================== */
+
+[data-theme="light"] .secondary-btn {
+
+    color: #344054;
+
+    background:
+        rgba(255, 255, 255, 0.82);
+
+    border:
+        1px solid
+        rgba(15, 23, 42, 0.10);
+
+    box-shadow:
+        0 7px 22px
+        rgba(15, 23, 42, 0.05);
+
+}
+
+
+[data-theme="light"] .secondary-btn:hover {
+
+    color: #087f9f;
+
+    background: #ffffff;
+
+    border-color:
+        rgba(6, 182, 212, 0.22);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* ==========================================
+   PROJECT DETAILS
+========================================== */
+
+[data-theme="light"] .detail-card {
+
+    background:
+        rgba(255, 255, 255, 0.82);
+
+    border:
+        1px solid
+        rgba(15, 23, 42, 0.075);
+
+    box-shadow:
+        0 15px 40px
+        rgba(15, 23, 42, 0.055);
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+[data-theme="light"] .detail-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(6, 182, 212, 0.18);
+
+    box-shadow:
+        0 20px 45px
+        rgba(15, 23, 42, 0.08);
+
+}
+
+
+[data-theme="light"] .detail-card i {
+
+    color: #0891b2;
+
+}
+
+
+[data-theme="light"] .detail-card span {
+
+    color: #7b8495;
+
+}
+
+
+[data-theme="light"] .detail-card strong {
+
+    color: #172033;
+
+}
+
+
+/* ==========================================
+   ONLINE STATUS
+========================================== */
+
+[data-theme="light"] .online {
+
+    color: #15966c;
+
+}
+
+
+[data-theme="light"] .online i {
+
+    color: #15966c;
+
+}
+
+
+/* ==========================================
+   SECTION HEADINGS
+========================================== */
+
+[data-theme="light"] .section-heading span,
+[data-theme="light"] .live-heading span {
+
+    color: #0891b2;
+
+}
+
+
+[data-theme="light"] .section-heading h2,
+[data-theme="light"] .live-heading h2 {
+
+    color: #111827;
+
+}
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+[data-theme="light"] .feature-item {
+
+    background:
+        rgba(255, 255, 255, 0.82);
+
+    border:
+        1px solid
+        rgba(15, 23, 42, 0.07);
+
+    color: #344054;
+
+    box-shadow:
+        0 12px 35px
+        rgba(15, 23, 42, 0.045);
+
+}
+
+
+[data-theme="light"] .feature-item:hover {
+
+    background: #ffffff;
+
+    border-color:
+        rgba(6, 182, 212, 0.18);
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(15, 23, 42, 0.075);
+
+}
+
+
+[data-theme="light"] .feature-item i {
+
+    color: #0891b2;
+
+}
+
+
+/* ==========================================
+   LIVE SECTION
+========================================== */
+
+[data-theme="light"] .live-status {
+
+    color: #15966c;
+
+}
+
+
+[data-theme="light"] .live-status i {
+
+    color: #15966c;
+
+}
+
+
+/* ==========================================
+   BROWSER WINDOW
+========================================== */
+
+[data-theme="light"] .browser-window {
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        rgba(15, 23, 42, 0.10);
+
+    box-shadow:
+        0 30px 80px
+        rgba(15, 23, 42, 0.12);
+
+}
+
+
+/* ==========================================
+   BROWSER BAR
+========================================== */
+
+[data-theme="light"] .browser-bar {
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f7f9fc
+        );
+
+    border-bottom:
+        1px solid
+        rgba(15, 23, 42, 0.08);
+
+}
+
+
+/* ==========================================
+   BROWSER DOTS
+========================================== */
+
+[data-theme="light"] .browser-dots span {
+
+    background: #cbd3df;
+
+}
+
+
+[data-theme="light"] .browser-dots span:nth-child(1) {
+
+    background: #ff6b6b;
+
+}
+
+
+[data-theme="light"] .browser-dots span:nth-child(2) {
+
+    background: #f5c451;
+
+}
+
+
+[data-theme="light"] .browser-dots span:nth-child(3) {
+
+    background: #48c774;
+
+}
+
+
+/* ==========================================
+   BROWSER URL
+========================================== */
+
+[data-theme="light"] .browser-url {
+
+    background:
+        #eef2f7;
+
+    color: #667085;
+
+    border:
+        1px solid
+        rgba(15, 23, 42, 0.055);
+
+}
+
+
+/* ==========================================
+   IFRAME
+========================================== */
+
+[data-theme="light"] .iframe-container {
+
+    background: #ffffff;
+
+}
+
+
+/* ==========================================
+   IFRAME LOADER
+========================================== */
+
+[data-theme="light"] .iframe-loader {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #eef4f8
+        );
+
+    color: #344054;
+
+}
+
+
+[data-theme="light"] .loader-spinner {
+
+    border:
+        3px solid
+        rgba(15, 23, 42, 0.08);
+
+    border-top-color:
+        #0891b2;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+[data-theme="light"] footer {
+
+    color: #667085;
+
+    border-top:
+        1px solid
+        rgba(15, 23, 42, 0.08);
+
+}
+
+
+[data-theme="light"] footer strong {
+
+    color: #172033;
+
+}
+
+
+/* ==========================================
+   LIVE ACTION AREA
+========================================== */
+
+[data-theme="light"] .live-actions {
+
+    color: #667085;
+
+}
+
+
+/* ==========================================
+   MOBILE LIGHT MODE
+========================================== */
+
+@media (max-width: 700px) {
+
+    [data-theme="light"] .project-nav {
+
+        padding:
+            18px 5%;
+
+    }
+
+    [data-theme="light"] .back-btn {
+
+        box-shadow:
+            0 5px 18px
+            rgba(15, 23, 42, 0.05);
+
+    }
+
+    [data-theme="light"] .theme-toggle {
+
+        box-shadow:
+            0 5px 18px
+            rgba(15, 23, 42, 0.06);
+
+    }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    [data-theme="light"] * {
+
+        transition: none !important;
+
+    }
+
+}

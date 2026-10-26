@@ -1,0 +1,4732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="robots" content="noindex,nofollow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCJK7387CP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MCJK7387CP');
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KASITU Webs | Software Developer & Web Solutions</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/favicon.png">
+    
+    <meta name="description"
+        content="KASITU Webs builds modern websites, mobile applications, business systems, and digital solutions for businesses across South Africa.">
+
+    <meta name="keywords"
+        content="Website Development, Software Developer, Web Design, Mobile Apps, KASITU Webs, Pretoria">
+
+    <meta name="author" content="KASITU Webs">
+
+    <meta name="theme-color" content="#0B1120">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KASITU Webs">
+    <meta property="og:description"
+        content="Premium websites, apps and business software.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-------- EmailJs ------->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="legal-footer.css">
+
+<style id="kasitu-service-modal-fix">
+/* =========================================================
+   KASITU SERVICE MODAL FUNCTIONALITY FIX
+   ========================================================= */
+
+.alarm-modal,
+.key-locator-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .25s ease, visibility .25s ease;
+}
+
+.alarm-modal.active,
+.key-locator-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.alarm-modal-box,
+.key-locator-modal-box {
+    position: relative;
+    z-index: 10001;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.alarm-modal-close,
+.key-locator-modal-close {
+    position: absolute;
+    z-index: 10002;
+    cursor: pointer;
+}
+
+body.kasitu-service-modal-open,
+html.kasitu-service-modal-open {
+    overflow: hidden;
+}
+</style>
+
+</head>
+<body>
+
+        <div id="progress-bar"></div>
+    <canvas id="particles"></canvas>
+<div class="bg-grid"></div>
+<div class="gradient-1"></div>
+<div class="gradient-2"></div>
+
+<header class="header">
+
+<nav class="navbar">
+
+<a href="#" class="logo">
+
+<div class="logo-circle">
+
+<img src="images/kasitu.webp" alt="KASITU Webs Logo" class="site-logo">
+
+</div>
+
+<div>
+
+<h2>KASITU</h2>
+
+<span>Building Digital Excellence</span>
+
+</div>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#portfolio">Projects</a></li>
+
+<li><a href="#pricing">Pricing</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-actions">
+
+<button id="theme-toggle">
+
+🌙
+
+</button>
+
+<button class="menu-btn">
+
+☰
+
+</button>
+
+</div>
+    
+</nav>
+</header>
+
+<!-- HERO -->
+<!-- ==========================================
+HOME
+========================================== -->
+
+<section id="home" class="hero">
+
+    <!-- LEFT SIDE -->
+
+    <div class="hero-left">
+
+        <span class="hero-badge">
+            <i class="fas fa-circle"></i>
+            Available for Projects
+        </span>
+
+        <h1>
+
+            We Build
+
+            <span>Premium Digital</span>
+
+            Solutions.
+
+        </h1>
+
+        <p>
+
+            KASITU Webs develops modern websites,
+
+            business systems, mobile applications,
+
+            and cloud solutions that help businesses
+
+            grow faster and operate smarter.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#contact" class="primary-btn">
+
+                Get Started
+
+            </a>
+
+            <a href="#portfolio" class="secondary-btn">
+
+                View Portfolio
+
+            </a>
+
+            <button
+
+                id="terminal-toggle"
+
+                class="secondary-btn">
+
+                <i class="fas fa-terminal"></i>
+
+                Terminal
+
+            </button>
+
+        </div>
+
+        <!-- STATS -->
+
+        <div class="hero-stats">
+
+            <div>
+
+                <h2
+
+                    class="counter"
+
+                    data-target="20">
+
+                    0
+
+                </h2>
+
+                <span>Projects</span>
+
+            </div>
+
+            <div>
+
+                <h2
+
+                    class="counter"
+
+                    data-target="20">
+
+                    0
+
+                </h2>
+
+                <span>Happy Clients</span>
+
+            </div>
+
+            <div>
+
+                <h2
+
+                    class="counter"
+
+                    data-target="6">
+
+                    0
+
+                </h2>
+
+                <span>Years Experience</span>
+
+            </div>
+
+                        <div>
+
+                <h2
+
+                    class="counter"
+
+                    data-target="24">
+
+                    0
+
+                </h2>
+
+                <span>Hours Support</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="hero-right">
+
+        <div class="laptop">
+
+            <div class="laptop-top">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+            <div class="code"></div>
+
+        </div>
+
+        <!-- FLOATING TECHNOLOGIES -->
+
+        <div class="floating-tech html">
+
+            <i class="fab fa-html5"></i>
+
+        </div>
+
+        <div class="floating-tech css">
+
+            <i class="fab fa-css3-alt"></i>
+
+        </div>
+
+        <div class="floating-tech js">
+
+            <i class="fab fa-js-square"></i>
+
+        </div>
+
+        <div class="floating-tech node">
+
+            <i class="fab fa-node-js"></i>
+
+        </div>
+
+        <div class="floating-tech github">
+
+            <i class="fab fa-github"></i>
+
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- ===========================================
+SERVICES
+=========================================== -->
+
+<section id="services">
+
+    <div class="section-header">
+
+        <span class="section-tag">OUR SERVICES</span>
+
+        <h2>Digital Solutions That Drive Growth</h2>
+
+        <p>
+            We create modern digital products that help businesses establish a strong online presence and improve efficiency.
+        </p>
+
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <h3>Website Development</h3>
+
+            <p>
+                Professional business websites, company profiles, landing pages and custom web applications.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fas fa-mobile-screen-button"></i>
+            </div>
+
+            <h3>Mobile Applications</h3>
+
+            <p>
+                Cross-platform mobile apps built for Android, Mac and modern business workflows.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fas fa-store"></i>
+            </div>
+
+            <h3>eCommerce Stores</h3>
+
+            <p>
+                Secure online stores with payment integration and inventory management.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fas fa-pen-ruler"></i>
+            </div>
+
+            <h3>Graphic Design</h3>
+
+            <p>
+                Logos, flyers, posters, business cards, CVs and marketing materials designed to strengthen your brand.
+            </p>
+
+        </div>
+
+<div class="service-card business-registration-card">
+    <div class="service-icon">
+        <i class="fas fa-building"></i>
+    </div>
+
+    <h3>Business Registration</h3>
+
+    <p>
+        Company registration and business setup services to help you
+        get your business started professionally.
+    </p>
+
+    <button
+        type="button"
+        class="service-learn-btn"
+        id="business-registration-btn">
+        <i class="fas fa-arrow-right"></i>
+        View Pricing
+    </button>
+</div>
+
+<div class="service-card key-locator-card" id="keyLocatorCard">
+
+    <div class="service-icon">
+        <i class="fas fa-map-marker-alt"></i>
+    </div>
+
+    <h3>Bluetooth Key Locators</h3>
+
+    <p>
+        Smart Bluetooth key locators that help you quickly find
+        your keys, bags and other important belongings.
+    </p>
+
+    <button
+        type="button"
+        class="service-learn-btn"
+        id="key-locator-pricing-btn">
+
+        View Pricing
+        <i class="fas fa-arrow-right"></i>
+
+    </button>
+
+</div>
+        
+<div class="service-card alarm-service-card" id="alarmServiceCard">
+
+    <div class="service-icon">
+        <i class="fas fa-shield-halved"></i>
+    </div>
+
+    <h3>Security Alarms</h3>
+
+    <p>
+        Stay protected with smart, reliable security alarms.
+        Built to deter intruders and give you peace of mind.
+    </p>
+
+    <button
+        type="button"
+        class="service-learn-btn"
+        id="alarm-pricing-btn">
+
+        View Alarm Pricing
+
+        <i class="fas fa-arrow-right"></i>
+
+    </button>
+
+</div>
+        
+<div class="service-card maintenance-service-card" id="maintenanceServiceCard">
+
+    <div class="service-icon">
+        <i class="fas fa-tools"></i>
+    </div>
+
+    <h3>Maintenance &amp; Support</h3>
+
+    <p>
+        Keep your website secure, updated, fast and running smoothly
+        with reliable ongoing technical support.
+    </p>
+
+    <a
+        href="maintenance.html"
+        class="service-learn-btn">
+
+        Explore Maintenance
+        <i class="fas fa-arrow-right"></i>
+
+    </a>
+
+</div>
+
+    </div>
+
+</section>
+
+    <!-- ==========================================
+PORTFOLIO
+========================================== -->
+
+<section id="portfolio">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            OUR WORK
+        </span>
+
+        <h2>
+
+            Recent Projects
+
+        </h2>
+
+        <p>
+
+            Every project is designed with performance,
+            responsiveness, security and user experience
+            in mind.
+
+        </p>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+        <!-- PROJECT 1 -->
+
+<!-- PROJECT 1 -->
+
+<article class="project-card">
+
+    <div class="project-image">
+
+        <img
+            src="images/mumsybraidingstudio.webp"
+            loading="lazy"
+            alt="Mumsy Braids Studio Booking and Admin Management System">
+
+    </div>
+
+    <div class="project-content">
+
+        <span class="project-tag">
+
+            Booking & Admin Management System
+
+        </span>
+
+        <h3>
+
+            Mumsy Braids Studio
+
+        </h3>
+
+        <p>
+
+            Professional booking and business management
+            platform for Mumsy Braids Studio. Customers can
+            browse hairstyles, select dates and times, submit
+            their details and complete bookings, while the
+            business owner can manage bookings, view the
+            calendar and monitor business activity through
+            a custom admin dashboard.
+
+        </p>
+
+        <div class="project-tech">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+            <span>Twilio</span>
+
+            <span>PayStack</span>
+
+            <span>Admin Dashboard</span>
+
+        </div>
+
+        <div class="project-links">
+
+            <!-- CUSTOMER WEBSITE -->
+
+            <a
+                href="projects/project.html?id=mumsy"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i class="fas fa-globe"></i>
+
+                View Website
+
+            </a>
+
+
+            <!-- ADMIN DASHBOARD -->
+
+            <a
+                href="projects/admin-dashboard.html"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i class="fas fa-chart-line"></i>
+
+                Admin Dashboard
+
+            </a>
+
+
+            <!-- PROJECT DETAILS -->
+
+            <button
+                type="button"
+                class="project-details-btn"
+                data-project="mumsy"
+            >
+
+                Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <img
+                    src="images/thutisproject.webp"
+                    loading="lazy"
+                    alt="Online Store">
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-tag">
+
+                    Business Website
+
+                </span>
+
+                <h3>
+
+                    Thutis' Project
+
+                </h3>
+
+                <p>
+
+                    A professional Vegatable business website
+                    designed to showcase the store’s
+                    products, provide important business 
+                    information, and make it easy for customers 
+                    to get in touch and find the store location.
+                    
+                </p>
+
+                <div class="project-tech">
+
+                    <span>WordPress</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+                <div class="project-links">
+
+<a href="projects/project.html?id=thutis">
+    View Project
+</a>
+
+            <button
+                type="button"
+                class="project-details-btn"
+                data-project="store">
+                Details
+             </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+<!-- PROJECT 3 — KASITU CREATIVE STUDIO -->
+        
+<article class="project-card creative-project-card">
+
+    <div class="project-image creative-project-image">
+
+        <img
+            src="images/kasitu-creative-studio.jpg"
+            loading="lazy"
+            alt="KASITU Creative Studio — Logo Design and Marketing Materials">
+
+        <div class="creative-image-badge">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            CREATIVE STUDIO
+        </div>
+
+    </div>
+
+
+    <div class="project-content">
+
+        <span class="project-tag creative-project-tag">
+            Logo Design &amp; Marketing Materials
+        </span>
+
+
+        <h3>
+            KASITU Creative Studio
+        </h3>
+
+
+        <p>
+            A showcase of professional logos, promotional posters,
+            flyers and brand visuals created by KASITU Webs for real
+            businesses, organisations and marketing campaigns.
+        </p>
+
+
+        <div class="project-tech creative-tech">
+
+            <span>
+                <i class="fas fa-pen-nib"></i>
+                Logo Design
+            </span>
+
+            <span>
+                <i class="fas fa-image"></i>
+                Posters
+            </span>
+
+            <span>
+                <i class="fas fa-file-image"></i>
+                Flyers
+            </span>
+
+            <span>
+                <i class="fas fa-palette"></i>
+                Branding
+            </span>
+
+        </div>
+
+
+        <div class="project-links creative-project-links">
+
+            <a
+                href="projects/index.html"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <i class="fas fa-images"></i>
+                View Designs
+
+            </a>
+
+
+            <button
+                type="button"
+                class="creative-explore-btn"
+                id="creative-explore-btn">
+
+                <i class="fas fa-arrow-up-right-from-square"></i>
+                Explore Studio Prices
+
+            </button>  
+
+        </div>
+
+    </div>
+
+</article>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+TRUSTED TECHNOLOGIES
+========================================== -->
+
+<section class="trusted" id="technologies">
+
+    <div class="section-header">
+
+        <span class="section-tag">TECHNOLOGIES</span>
+
+              <h2>
+
+            Powered By
+
+            <span>Modern Technologies</span>
+
+        </h2>
+
+        <p>
+            We build secure, scalable and modern solutions using industry-leading technologies.
+        </p>
+
+    </div>
+
+<!-- ==================================================
+     TRUSTED TECHNOLOGIES
+     ================================================== -->
+
+<div class="trusted-grid">
+
+    <div
+        class="tech-info-card"
+        data-modal-title="HTML5"
+        data-modal-icon="fab fa-html5"
+        data-modal-text="HTML5 is the structure of a website. It defines the content and layout of pages, such as headings, paragraphs, images, forms and other elements."
+    >
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="CSS3"
+        data-modal-icon="fab fa-css3-alt"
+        data-modal-text="CSS3 controls how a website looks and feels. It handles colours, layouts, animations, spacing, responsiveness and modern visual effects."
+    >
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="JavaScript"
+        data-modal-icon="fab fa-js-square"
+        data-modal-text="JavaScript adds behaviour and interactivity to websites. It powers things such as calculators, menus, animations, forms, modals and dynamic content."
+    >
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="PayStack"
+        data-modal-icon="fas fa-credit-card"
+        data-modal-text="Paystack is a payment platform that allows websites and applications to securely accept online payments from customers."
+    >
+        <i class="fas fa-credit-card"></i>
+        <h3>PayStack</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="Firebase"
+        data-modal-icon="fas fa-fire"
+        data-modal-text="Firebase provides cloud-based services such as databases, authentication, hosting and other backend tools that help applications store and manage data."
+    >
+        <i class="fas fa-fire"></i>
+        <h3>Firebase</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="MongoDB"
+        data-modal-icon="fas fa-database"
+        data-modal-text="MongoDB is a database system used to store application data. It is especially useful for applications that need flexible and scalable data storage."
+    >
+        <i class="fas fa-database"></i>
+        <h3>MongoDB</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="WordPress"
+        data-modal-icon="fab fa-wordpress"
+        data-modal-text="WordPress is a content management system that makes it easier to create, manage and update websites without having to build every feature from scratch."
+    >
+        <i class="fab fa-wordpress"></i>
+        <h3>WordPress</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="GitHub"
+        data-modal-icon="fab fa-github"
+        data-modal-text="GitHub is a platform used to store, manage and collaborate on code. It helps developers track changes, maintain projects and work safely with versions of their code."
+    >
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="Responsive Design"
+        data-modal-icon="fas fa-mobile-alt"
+        data-modal-text="Responsive design makes a website automatically adapt to different screen sizes, including phones, tablets, laptops and desktop computers."
+    >
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Responsive Design</h3>
+    </div>
+
+
+    <div
+        class="tech-info-card"
+        data-modal-title="Cloud Hosting"
+        data-modal-icon="fas fa-cloud"
+        data-modal-text="Cloud hosting allows websites and applications to run using internet-based servers, providing reliable access, scalability and the ability to handle changing traffic."
+    >
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Hosting</h3>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PRICING
+========================================== -->
+
+<section id="pricing">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+
+            OUR PACKAGES
+
+        </span>
+
+        <h2>
+
+            Choose Your Perfect Package
+
+        </h2>
+
+        <p>
+
+            Transparent pricing with no hidden costs.
+            Every package includes responsive design,
+            security and professional support.
+
+        </p>
+
+    </div>
+
+    <div class="pricing-grid">
+
+        <!-- STARTER -->
+
+        <div class="price-card">
+
+            <span class="price-label">
+
+                STARTER
+
+            </span>
+
+            <h3>
+
+                Starter Website
+
+            </h3>
+
+<div class="price-wrap">
+    <div class="price">R2 999</div>
+    <span class="once-off">Once-Off</span>
+</div>
+
+            <ul>
+
+                <li>✔ 1–5 Pages</li>
+
+                <li>✔ Mobile Responsive</li>
+
+                <li>✔ Contact Form</li>
+
+                <li>✔ Basic SEO</li>
+
+                <li>✔ Google Maps integration</li>
+
+                <li>✔ Social media links</li>
+                
+                <li>✔ Free Domain (10 Months)</li>
+
+                <li>✔ SSL Certificate</li>
+
+                <li>✔ 14 days post-launch support</li>
+
+                <li>✔ Free Consultation</li>
+
+            </ul>
+
+            <button class="primary-btn select-price">
+
+                Choose Package
+
+            </button>
+
+        </div>
+
+        <!-- BUSINESS -->
+
+        <div class="price-card featured">
+
+            <span class="popular">
+
+                MOST POPULAR
+
+            </span>
+
+            <span class="price-label">
+
+                BUSINESS
+
+            </span>
+
+            <h3>
+
+                Business Website
+
+            </h3>
+
+<div class="price-wrap">
+    <div class="price">R4 999</div>
+    <span class="once-off">Once-Off</span>
+</div>
+
+            <ul>
+                <li>✔ Everything in Starter</li>
+                  
+                <li>✔ Up to 8 Pages</li>
+
+                <li>✔ Premium Design</li>
+
+                <li>✔ SEO Optimisation</li>
+
+                 <li>✔ More advanced contact functionality</li>
+
+                <li>✔ WhatsApp Integration</li>
+
+                <li>✔ Speed Optimisation</li>
+
+                 <li>✔ Google Search Console setup</li>
+
+                <li>✔ 30 days post-launch support</li>
+
+                <li>✔ Training Included</li>
+
+            </ul>
+
+            <button class="primary-btn select-price">
+
+                Choose Package
+
+            </button>
+
+        </div>
+
+        <!-- ECOMMERCE -->
+
+        <div class="price-card">
+
+            <span class="price-label">
+
+                ECOMMERCE
+
+            </span>
+
+            <h3>
+
+                Online Store
+
+            </h3>
+
+ <div class="price-wrap">
+    <div class="price">R5 999</div>
+    <span class="once-off">Once-Off</span>
+</div>
+                
+            <ul>
+
+                <li>✔ Up to 7 Pages</li>
+
+                <li>✔ 40 Products</li>
+
+                <li>✔ Product categories</li>
+                
+                <li>✔ Professional responsive design</li>
+
+                <li>✔ Online Store</li>
+
+                <li>✔ Basic Inventory/ Stock Management</li>
+
+                <li>✔ Customer Accounts</li>
+
+                <li>✔ 1 payment gateway</li>
+
+                <li>✔ Google Analytics</li>
+
+                <li>✔ Checkout</li>
+
+                <li>✔ Admin Dashboard</li>
+
+                <li>✔ Shopping cart</li>
+
+                <li>✔ Premium Support</li>
+
+            </ul>
+
+            <button class="primary-btn select-price">
+
+                Choose Package
+
+            </button>
+
+        </div>
+
+                <!-- ECOMMERCE -->
+
+        <div class="price-card">
+
+            <span class="price-label">
+
+                ECOMMERCE Elite ⭐
+
+            </span>
+
+            <h3>
+
+                Online Store Premium
+
+            </h3>
+
+<div class="price-wrap">
+    <div class="price">Starting at<br> R7 999</div>
+    <span class="once-off">Once-Off</span>
+</div>
+                
+            <ul>
+
+                <li>✔ Up to 10 Pages</li>
+                
+                <li>✔ 100 Products</li>
+
+                 <li>✔ Advanced product categories</li>
+
+                <li>✔ Advanced Inventory/ Stock Management</li>
+
+                <li>✔ Customer Accounts</li>
+
+                <li>✔ Order status management</li>
+
+                <li>✔ Coupons/discount codes</li>
+
+               <li>✔ 2 payment gateways</li>
+
+                <li>✔ Google Analytics</li>
+
+                <li>✔ Checkout</li>
+
+                <li>✔ Advance Admin Dashboard</li>
+
+                <li>✔ Shopping cart</li>
+
+                <li>✔ 60 days post-launch support</li>
+
+            </ul>
+
+            <button class="primary-btn select-price">
+
+                Choose Package
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ===========================================
+PROJECT ESTIMATOR
+=========================================== -->
+
+<section class="calculator">
+
+    <div class="calculator-left">
+
+        <span id="live-estimate" class="section-subtitle">
+
+            LIVE ESTIMATE
+
+        </span>
+
+        <h2>
+
+            Build Your
+
+            <span>Perfect Website</span>
+
+        </h2>
+
+        <p>
+
+            Select a package and customise it
+            to receive an instant estimate.
+
+        </p>
+
+    </div>
+
+    <div class="calculator-right">
+
+        <form id="price-form">
+
+            <label>
+
+                Website Package
+
+            </label>
+
+<!-- ==================================================
+     PACKAGE INPUT WITH CLEAR BUTTON
+     ================================================== -->
+
+<div class="package-input-wrap">
+
+    <input
+        id="site-type"
+        readonly
+        placeholder="Select a package above"
+        autocomplete="off"
+    >
+
+    <button
+        type="button"
+        id="clear-package"
+        class="clear-package-btn"
+        aria-label="Clear selected package"
+        title="Clear selected package"
+    >
+        ×
+    </button>
+
+</div>
+
+<fieldset>
+
+    <legend>
+        Extra Features
+    </legend>
+
+
+    <!-- SEO -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="seo"
+            data-price="500">
+
+        <span>
+            SEO Optimisation (R500)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+        <!-- App Development -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="app"
+            data-price="2000">
+
+        <span>
+            App Developmnt (R2 000)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+
+    <!-- CONTACT FORMS -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="contact"
+            data-price="600">
+
+        <span>
+            Contact Forms (R600)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+
+    <!-- BLOG -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="blog"
+            data-price="700">
+
+        <span>
+            Blog System (R700)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+
+    <!-- BOOKING -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="booking"
+            data-price="1000">
+
+        <span>
+            Booking System (R1 000)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+
+    <!-- ADMIN DASHBOARD -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="dashboard"
+            data-price="1600">
+
+        <span>
+            Admin Dashboard (R1 600)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+
+    <!-- USER LOGIN -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="login"
+            data-price="1300">
+
+        <span>
+            User Login System (R1 300)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+
+    <!-- WHATSAPP -->
+
+    <label class="extra-option">
+
+        <input
+            class="extra"
+            type="checkbox"
+            data-extra="whatsapp"
+            data-price="900">
+
+        <span>
+            WhatsApp Integration (R900)
+        </span>
+
+        <span class="recommended-badge">
+            Recommended
+        </span>
+
+    </label>
+
+</fieldset>
+            
+            <div class="estimate-box">
+
+                <small>
+
+                    Estimated Investment
+
+                </small>
+
+                <h2 id="total">
+
+                    R0
+
+                </h2>
+
+            </div>
+
+            <button
+                type="button"
+                id="whatsapp-btn"
+                class="primary-btn">
+
+                Continue
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ===========================================
+WHY CHOOSE US
+=========================================== -->
+
+<section class="why-us">
+
+    <div class="why-left">
+
+        <span class="section-tag">
+
+            WHY CHOOSE US
+
+        </span>
+
+        <h2>
+
+            Building Reliable Digital Solutions
+
+        </h2>
+
+        <p>
+
+            At KASITU Webs we focus on creating secure,
+            fast and user-friendly digital solutions that
+            help businesses grow.
+
+            Every project is built with scalability,
+            performance and long-term maintainability
+            in mind.
+
+        </p>
+
+    </div>
+
+<!-- ==================================================
+     WHY CHOOSE US
+     ================================================== -->
+
+<div class="why-right">
+
+    <div
+        class="feature"
+        data-modal-title="Fast Performance"
+        data-modal-icon="fas fa-rocket"
+        data-modal-text="We build websites with performance in mind so pages load quickly and visitors can move through the website smoothly."
+    >
+        🚀 Fast Performance
+    </div>
+
+
+    <div
+        class="feature"
+        data-modal-title="Secure Development"
+        data-modal-icon="fas fa-lock"
+        data-modal-text="We follow security-focused development practices to help protect websites, forms, customer information and application functionality."
+    >
+        🔒 Secure Development
+    </div>
+
+
+    <div
+        class="feature"
+        data-modal-title="Mobile Responsive"
+        data-modal-icon="fas fa-mobile-screen-button"
+        data-modal-text="Your website is designed to adapt to phones, tablets, laptops and desktop screens so customers can use it comfortably on different devices."
+    >
+        📱 Mobile Responsive
+    </div>
+
+
+    <div
+        class="feature"
+        data-modal-title="Cloud Ready"
+        data-modal-icon="fas fa-cloud"
+        data-modal-text="Our solutions can be built with cloud technologies to support online data, scalable services, hosting and modern application functionality."
+    >
+        ☁ Cloud Ready
+    </div>
+
+
+    <div
+        class="feature"
+        data-modal-title="SEO Optimised"
+        data-modal-icon="fas fa-magnifying-glass"
+        data-modal-text="SEO optimisation helps search engines understand your website and can improve how easily potential customers discover your business online."
+    >
+        ⚡ SEO Optimised
+    </div>
+
+
+    <div
+        class="feature"
+        data-modal-title="Ongoing Support"
+        data-modal-icon="fas fa-headset"
+        data-modal-text="We can continue helping after launch with updates, maintenance, improvements, troubleshooting and technical support."
+    >
+        💬 Ongoing Support
+    </div>
+
+</div>
+
+
+<!-- ==================================================
+     UNIVERSAL MINI INFORMATION MODAL
+     ================================================== -->
+
+<div
+    id="info-modal"
+    class="info-modal"
+    aria-hidden="true"
+>
+
+    <div
+        class="info-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="info-modal-title"
+    >
+
+        <button
+            type="button"
+            id="info-modal-close"
+            class="info-modal-close"
+            aria-label="Close information"
+        >
+            ×
+        </button>
+
+        <div class="info-modal-icon">
+            <i id="info-modal-icon"></i>
+        </div>
+
+        <span class="info-modal-label">
+            KASITU Webs
+        </span>
+
+        <h3 id="info-modal-title">
+            Technology
+        </h3>
+
+        <p id="info-modal-text">
+            Information about this technology.
+        </p>
+
+        <button
+            type="button"
+            id="info-modal-ok"
+            class="info-modal-ok"
+        >
+            Got it
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- ===========================================
+PROCESS
+=========================================== -->
+<section class="process">
+
+    <div class="section-header">
+
+        <span class="section-subtitle">
+            OUR PROCESS
+        </span>
+
+        <h2>
+            From Idea
+            <span>To Reality</span>
+        </h2>
+
+    </div>
+
+
+    <div class="process-route">
+
+        <div class="route-line"></div>
+
+
+        <!-- START -->
+        <div class="process-step start">
+
+            <div class="step-marker">
+                <span>START</span>
+            </div>
+
+            <div class="step-content">
+
+                <span class="step-number">01</span>
+
+                <h3>Discovery</h3>
+
+                <p>
+                    Understanding your goals,
+                    audience and business.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESIGN -->
+        <div class="process-step">
+
+            <div class="step-marker">
+                <span>02</span>
+            </div>
+
+            <div class="step-content">
+
+                <span class="step-number">02</span>
+
+                <h3>Design</h3>
+
+                <p>
+                    Creating modern,
+                    user-focused interfaces.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DEVELOPMENT -->
+        <div class="process-step">
+
+            <div class="step-marker">
+                <span>03</span>
+            </div>
+
+            <div class="step-content">
+
+                <span class="step-number">03</span>
+
+                <h3>Development</h3>
+
+                <p>
+                    Building fast,
+                    secure and scalable
+                    applications.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LAUNCH -->
+        <div class="process-step">
+
+            <div class="step-marker">
+                <span>04</span>
+            </div>
+
+            <div class="step-content">
+
+                <span class="step-number">04</span>
+
+                <h3>Launch</h3>
+
+                <p>
+                    Deployment,
+                    optimisation and
+                    ongoing support.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESTINATION -->
+        <div class="process-step destination">
+
+            <div class="step-marker">
+                <span>🚀</span>
+            </div>
+
+            <div class="step-content">
+
+                <span class="step-number">
+                    DESTINATION
+                </span>
+
+                <h3>Your Digital Reality</h3>
+
+                <p>
+                    Your website is live,
+                    optimised and ready
+                    to grow your business.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    
+<!-- ==========================================
+TESTIMONIALS
+========================================== -->
+
+<section id="testimonials">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+
+            CLIENT REVIEWS
+
+        </span>
+
+        <h2>
+
+            What Our Clients Say
+
+        </h2>
+
+        <p>
+
+            We are committed to delivering high-quality digital solutions that help businesses grow.
+
+        </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <article class="testimonial-card">
+
+            <div class="stars">
+
+                ★★★★★
+
+            </div>
+
+            <p>
+
+                "KASITU Webs transformed our business with a professional website that exceeded our expectations."
+
+            </p>
+
+            <div class="client">
+
+                <div>
+
+                    <strong>John Smith</strong>
+
+                 <br>   <small><span>
+                        Business Owner
+                    </span></small>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="testimonial-card">
+
+            <div class="stars">
+
+                ★★★★★
+
+            </div>
+
+            <p>
+
+                "Excellent communication, fast delivery and amazing support throughout the project."
+
+            </p>
+
+            <div class="client">
+
+                <div>
+
+                    <strong>Sarah Williams</strong>
+
+                    <br><small><span>
+                        Marketing Manager
+                    </span></small>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="testimonial-card">
+
+            <div class="stars">
+
+                ★★★★★
+
+            </div>
+
+            <p>
+
+                "Highly recommend KASITU Webs for anyone looking for modern business websites."
+
+            </p>
+
+            <div class="client">
+                <div>
+
+                    <strong>David Brown</strong>
+
+                    <br><small><span>
+                        Director
+                    </span></small>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+    <section id="faq">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+
+            FAQ
+
+        </span>
+
+        <h2>
+
+            Frequently Asked
+
+            <span>Questions</span>
+
+        </h2>
+
+    </div>
+
+    <div class="faq-container">
+
+        <details>
+
+            <summary>
+
+                How long does a website take?
+
+            </summary>
+
+            <p>
+
+                Most business websites are completed within 1–3 weeks depending on complexity.
+
+            </p>
+
+        </details>
+
+        <details>
+
+            <summary>
+
+                Do you offer hosting?
+
+            </summary>
+
+            <p>
+
+                Yes. We can provide hosting, domain registration and website maintenance.
+
+            </p>
+
+        </details>
+
+        <details>
+
+            <summary>
+
+                Can you redesign my existing website?
+
+            </summary>
+
+            <p>
+
+                Absolutely. We can modernise your existing website while preserving your content where appropriate.
+
+            </p>
+
+        </details>
+
+        <details>
+
+            <summary>
+
+                Do you build online stores?
+
+            </summary>
+
+            <p>
+
+                Yes. We develop secure eCommerce websites with payment integration and inventory management.
+
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+    <section id="contact">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+
+            CONTACT US
+
+        </span>
+
+        <h2>
+
+            Let's Build Something Amazing
+
+        </h2>
+
+<p>
+
+Tell us about your project and
+we'll prepare a personalised proposal.
+
+</p>
+
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- LEFT -->
+
+       <div class="contact-info">
+
+    <!-- LOCATION -->
+    <a
+        class="info-card contact-link"
+        href="https://www.google.com/maps/search/?api=1&query=1055%20Ext%201%2C%20Soshanguve%20South%2C%200152%2C%20South%20Africa"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open KASITU Webs location in Google Maps"
+    >
+
+        <div class="info-card-icon">
+            <i class="fas fa-location-dot"></i>
+        </div>
+
+        <div>
+            <span class="contact-label">
+                LOCATION
+            </span>
+
+            <h3>
+                Soshanguve, Pretoria
+            </h3>
+
+            <p>
+                South Africa
+            </p>
+
+            <small>
+                Open in Google Maps
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </small>
+        </div>
+
+    </a>
+
+
+    <!-- EMAIL -->
+    <a
+        class="info-card contact-link"
+        href="mailto:info@kasituwebs.co.za"
+        aria-label="Email KASITU Webs"
+    >
+
+        <div class="info-card-icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+
+        <div>
+            <span class="contact-label">
+                EMAIL
+            </span>
+
+            <h3>
+                info@kasituwebs.co.za
+            </h3>
+
+            <p>
+                Send us your project enquiry
+            </p>
+
+            <small>
+                Open email
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </small>
+        </div>
+
+    </a>
+
+
+    <!-- PHONE -->
+    <a
+        class="info-card contact-link"
+        href="tel:+27794380103"
+        aria-label="Call KASITU Webs"
+    >
+
+        <div class="info-card-icon">
+            <i class="fas fa-phone"></i>
+        </div>
+
+        <div>
+            <span class="contact-label">
+                PHONE
+            </span>
+
+            <h3>
+                079 438 0103
+            </h3>
+
+            <p>
+                Call us directly
+            </p>
+
+            <small>
+                Call now
+                <i class="fas fa-phone"></i>
+            </small>
+        </div>
+
+    </a>
+
+<div class="info-card">
+
+    <div class="info-card-icon">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <div>
+        <h3>WhatsApp</h3>
+
+        <p>Available 7 Days a Week</p>
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- RIGHT -->
+        
+        <form id="contact-form">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required>
+
+
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number (10 digits)"
+                inputmode="numeric"
+                pattern="[0-9]{10}"
+                minlength="10"
+                maxlength="10"
+                required>
+
+            
+            <input
+                type="text"
+                name="company"
+                placeholder="Company (Optional)">
+
+            <textarea
+                name="message"
+                rows="6"
+                placeholder="Tell us about your project..."
+                required></textarea>
+
+            <button
+                type="submit"
+                class="primary-btn">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- ==========================================
+     SUPPORT & WORKING HOURS
+========================================== -->
+
+<section
+    id="support"
+    class="support-section"
+>
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            SUPPORT CENTER
+        </span>
+
+        <h2>
+            We're Here When
+            <span>You Need Us</span>
+        </h2>
+
+        <p>
+            Whether you need help with an existing project,
+            technical assistance or want to start something new,
+            our support team is ready to assist.
+        </p>
+
+    </div>
+
+
+    <div class="support-grid">
+
+
+        <!-- SUPPORT STATUS -->
+
+        <div class="support-card support-status">
+
+            <div class="support-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+
+            <div>
+
+                <span class="support-label">
+                    SUPPORT STATUS
+                </span>
+
+                <h3>
+                    Available for Projects
+                </h3>
+
+                <p>
+                    Contact us for project enquiries,
+                    technical assistance and support.
+                </p>
+
+            </div>
+
+            <div class="online-status">
+
+                <span></span>
+
+                Currently Available
+
+            </div>
+
+        </div>
+
+
+        <!-- WORKING HOURS -->
+
+        <div class="support-card">
+
+            <div class="support-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+
+            <span class="support-label">
+                WORKING HOURS
+            </span>
+
+            <h3>
+                Business Hours
+            </h3>
+
+            <div class="hours-list">
+
+                <div>
+                    <span>Monday – Friday</span>
+                    <strong>08:00 – 18:00</strong>
+                </div>
+
+                <div>
+                    <span>Saturday</span>
+                    <strong>09:00 – 17:00</strong>
+                </div>
+
+                <div>
+                    <span>Sunday</span>
+                    <strong>Closed</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- AFTER HOURS -->
+
+        <div class="support-card">
+
+            <div class="support-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+
+            <span class="support-label">
+                AFTER HOURS
+            </span>
+
+            <h3>
+                Emergency Support
+            </h3>
+
+            <p>
+                Urgent technical issues can be reported
+                after business hours. Response times may
+                vary depending on availability and the
+                nature of the issue.
+            </p>
+
+            <a
+                href="https://wa.me/27794380103"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="support-action"
+            >
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp Support
+            </a>
+
+        </div>
+        
+        <!-- CONTACT -->
+
+        <div class="support-card">
+
+            <div class="support-icon">
+                <i class="fas fa-comments"></i>
+            </div>
+
+            <span class="support-label">
+                NEED HELP?
+            </span>
+
+            <h3>
+                Talk To Our Team
+            </h3>
+
+            <p>
+                Send us your requirements and we'll
+                get back to you with the next steps.
+            </p>
+
+            <a
+                href="#contact"
+                class="support-action"
+            >
+                Start a Conversation
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+    <!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <h2>KASITU Webs</h2>
+
+            <p>
+
+                We build premium websites, mobile applications,
+                cloud solutions and business software that help
+                businesses grow.
+
+            </p>
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+
+                <a href="#" aria-label="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="#" aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#portfolio">Portfolio</a></li>
+
+                <li><a href="#pricing">Pricing</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Services</h3>
+
+            <ul>
+
+                <li>Website Development</li>
+
+                <li>Mobile Apps</li>
+
+                <li>Business Registration</li>
+
+                 <li>Bluetooth KeyFinders </li>
+
+                 <li>Security Alarms</li>
+
+                <li>Graphic Design</li>
+
+                <li>SEO</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <ul>
+
+                <li><a href="https://www.google.com/maps/search/?
+                        api=1&query=1055%20Ext%201%2C%20Soshanguve
+                        %20South%2C%200152%2C%20South%20Africa">📍 Soshanguve, Pretoria, South Africa</a></li>
+
+                <li>📧 info@kasituwebs.co.za</li>
+
+                <li><a href="tel:+27794380103">🌐 079 438 0103</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © <span id="year"></span> KASITU Webs.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+    
+<button id="scrollTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+    <div id="command-palette">
+
+    <input
+
+        id="command-search"
+
+        type="text"
+
+        placeholder="Jump to a section...">
+
+</div>
+    <div id="terminal">
+
+    <div class="terminal-header">
+
+        <strong>KASITU OS</strong>
+
+        <button id="terminal-close">
+
+            ✕
+
+        </button>
+
+    </div>
+
+    <div id="terminal-body">
+
+        <div class="terminal-line">
+
+            Welcome to KASITU OS
+
+        </div>
+
+        <div class="terminal-line">
+
+            Type <strong>help</strong> to begin.
+
+        </div>
+
+    </div>
+
+    <input
+
+        id="terminal-input"
+
+        autocomplete="off"
+
+        placeholder="Type a command...">
+
+</div>
+
+    <!-- ==================================================
+     QUOTATION CHOICE MODAL
+================================================== -->
+
+<div id="quotation-modal" class="quotation-modal">
+
+    <div class="quotation-modal-card">
+
+        <button
+            type="button"
+            id="quotation-close"
+            class="quotation-close">
+
+            ×
+
+        </button>
+
+
+        <div class="quotation-icon">
+
+            <i class="fas fa-file-invoice"></i>
+
+        </div>
+
+
+        <span class="quotation-tag">
+
+            PROPOSAL RECEIVED
+
+        </span>
+
+
+        <h2>
+
+            Your Request Has Been Sent
+
+        </h2>
+
+
+        <p id="quotation-message">
+
+            Thank you for choosing KASITU Webs.
+            Your proposal request has been received.
+
+        </p>
+
+
+        <div class="quotation-preview">
+
+            <div>
+
+                <span>Package</span>
+
+                <strong id="quotation-package">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>Estimated Investment</span>
+
+                <strong id="quotation-total">
+                    R0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <h3>
+
+            Would you like to download your quotation?
+
+        </h3>
+
+
+        <div class="quotation-actions">
+
+            <button
+                type="button"
+                id="download-quotation"
+                class="primary-btn">
+
+                <i class="fas fa-file-pdf"></i>
+
+                Download Quotation
+
+            </button>
+
+
+            <button
+                type="button"
+                id="quotation-later"
+                class="secondary-btn">
+
+                Maybe Later
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FLOATING WHATSAPP BUSINESS BUTTON -->
+
+<button
+    id="floating-whatsapp"
+    class="floating-whatsapp"
+    type="button"
+    aria-label="Chat with KASITU Webs on WhatsApp Business"
+    title="Chat with KASITU Webs"
+>
+
+    <span class="floating-whatsapp-ring"></span>
+
+    <span class="floating-whatsapp-icon">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </span>
+
+    <span class="floating-whatsapp-label">
+        WhatsApp Business
+    </span>
+
+        <span class="floating-whatsapp-hint">
+        Hold & drag
+    </span>
+</button>
+
+    <!-- ==========================================
+PROJECT DETAILS MODAL
+========================================== -->
+
+<div id="project-modal" class="project-modal" aria-hidden="true">
+
+    <div class="project-modal-backdrop"></div>
+
+    <div
+        class="project-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-modal-title"
+    >
+
+        <button
+            type="button"
+            class="project-modal-close"
+            id="project-modal-close"
+            aria-label="Close project details"
+        >
+            &times;
+        </button>
+
+        <div class="project-modal-header">
+
+            <span id="project-modal-tag" class="project-modal-tag">
+                PROJECT
+            </span>
+
+            <h2 id="project-modal-title">
+                Project Title
+            </h2>
+
+            <p id="project-modal-description">
+                Project description.
+            </p>
+
+        </div>
+
+        <div class="project-modal-content">
+
+            <div class="project-modal-section">
+
+                <h3>
+                    <i class="fas fa-star"></i>
+                    Project Highlights
+                </h3>
+
+                <ul id="project-modal-features"></ul>
+
+            </div>
+
+            <div class="project-modal-section">
+
+                <h3>
+                    <i class="fas fa-code"></i>
+                    Technologies
+                </h3>
+
+                <div
+                    id="project-modal-tech"
+                    class="project-modal-tech">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project-modal-footer">
+
+            <a
+                href="#"
+                id="project-modal-link"
+                class="primary-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fas fa-external-link-alt"></i>
+                Visit Website
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ==================================================
+     KASITU CREATIVE STUDIO PRICE MODAL
+================================================== -->
+
+<div
+    id="creative-price-modal"
+    class="creative-price-modal"
+    aria-hidden="true">
+
+    <div
+        class="creative-price-backdrop"
+        id="creative-price-backdrop">
+    </div>
+
+    <div
+        class="creative-price-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="creative-price-title">
+
+        <!-- CLOSE -->
+
+        <button
+            type="button"
+            class="creative-price-close"
+            id="creative-price-close"
+            aria-label="Close Creative Studio prices">
+
+            &times;
+
+        </button>
+
+
+        <!-- HEADER -->
+
+        <div class="creative-price-header">
+
+            <div class="creative-price-icon">
+
+                <i class="fas fa-wand-magic-sparkles"></i>
+
+            </div>
+
+            <span class="creative-price-label">
+                KASITU CREATIVE STUDIO
+            </span>
+
+            <h2 id="creative-price-title">
+                Creative Design Packages
+            </h2>
+
+            <p>
+                Professional designs created to give your
+                business a stronger and more memorable brand.
+            </p>
+
+        </div>
+
+
+        <!-- PRICE GRID -->
+
+        <div class="creative-price-grid">
+
+            <!-- LOGO -->
+
+            <div class="creative-price-card">
+
+                <div class="creative-card-icon">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+
+                <span class="creative-card-type">
+                    LOGO DESIGN
+                </span>
+
+                <h3>
+                    Logo Design
+                </h3>
+
+                <div class="creative-price">
+                    R270
+                    <small>Once-Off</small>
+                </div>
+
+                <ul>
+                    <li>Custom logo design</li>
+                    <li>2 design concepts</li>
+                    <li>2 revisions</li>
+                    <li>High-resolution files</li>
+                </ul>
+
+            </div>
+
+
+            <!-- PREMIUM LOGO -->
+
+            <div class="creative-price-card premium">
+
+                <span class="creative-best-value">
+                    PREMIUM
+                </span>
+
+                <div class="creative-card-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+
+                <span class="creative-card-type">
+                    BRANDING
+                </span>
+
+                <h3>
+                    Premium Logo Package
+                </h3>
+
+                <div class="creative-price">
+                    R390
+                    <small>Once-Off</small>
+                </div>
+
+                <ul>
+                    <li>Professional logo design</li>
+                    <li>Multiple logo concepts</li>
+                    <li>Logo variations</li>
+                    <li>High-resolution files</li>
+                    <li>Professional brand presentation</li>
+                </ul>
+
+            </div>
+
+
+            <!-- FLYER -->
+
+            <div class="creative-price-card">
+
+                <div class="creative-card-icon">
+                    <i class="fas fa-file-image"></i>
+                </div>
+
+                <span class="creative-card-type">
+                    MARKETING
+                </span>
+
+                <h3>
+                    Flyer Design
+                </h3>
+
+                <div class="creative-price">
+                    R399
+                    <small>Per Design</small>
+                </div>
+
+                <ul>
+                    <li>Custom flyer design</li>
+                    <li>2 revisions</li>
+                    <li>Print-ready design</li>
+                    <li>Digital version</li>
+                </ul>
+
+            </div>
+
+
+            <!-- POSTER -->
+
+            <div class="creative-price-card">
+
+                <div class="creative-card-icon">
+                    <i class="fas fa-image"></i>
+                </div>
+
+                <span class="creative-card-type">
+                    MARKETING
+                </span>
+
+                <h3>
+                    Poster Design
+                </h3>
+
+                <div class="creative-price">
+                    R449
+                    <small>Per Design</small>
+                </div>
+
+                <ul>
+                    <li>Custom poster design</li>
+                    <li>2 revisions</li>
+                    <li>Print-ready design</li>
+                    <li>Digital version</li>
+                </ul>
+
+            </div>
+
+
+            <!-- BRAND STARTER -->
+
+            <div class="creative-price-card brand-starter">
+
+                <span class="creative-best-value">
+                    BEST VALUE
+                </span>
+
+                <div class="creative-card-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+
+                <span class="creative-card-type">
+                    COMPLETE BRANDING
+                </span>
+
+                <h3>
+                    KASITU Brand Starter
+                </h3>
+
+                <div class="creative-price">
+                    R1 899
+                    <small>Once-Off</small>
+                </div>
+
+                <ul>
+                    <li>Logo design</li>
+                    <li>Logo variation</li>
+                    <li>Business card design</li>
+                    <li>Flyer design</li>
+                    <li>Poster design</li>
+                    <li>Social profile design</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="creative-price-footer">
+
+            <div>
+
+                <strong>
+                    Need something custom?
+                </strong>
+
+                <span>
+                    We can create a package around your business needs.
+                </span>
+
+            </div>
+
+            <a
+                href="#contact"
+                class="creative-price-action"
+                id="creative-price-contact">
+
+                Start Your Design
+
+                <i class="fas fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- ==================================================
+     KASITU BUSINESS REGISTRATION PRICE MODAL
+================================================== -->
+
+<div
+    class="business-price-modal"
+    id="business-price-modal"
+    aria-hidden="true">
+
+    <div
+        class="business-price-backdrop"
+        id="business-price-backdrop">
+    </div>
+
+    <div
+        class="business-price-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="business-price-title">
+
+        <!-- CLOSE -->
+        <button
+            type="button"
+            class="business-price-close"
+            id="business-price-close"
+            aria-label="Close business registration pricing">
+
+            <i class="fas fa-times"></i>
+
+        </button>
+
+
+        <!-- HEADER -->
+
+        <div class="business-price-header">
+
+            <div class="business-price-icon">
+                <i class="fas fa-building"></i>
+            </div>
+
+            <span class="business-price-label">
+                KASITU BUSINESS SERVICES
+            </span>
+
+            <h2 id="business-price-title">
+                Business Registration
+            </h2>
+
+            <p>
+                Professional business registration and setup services
+                designed to help you get started with confidence.
+            </p>
+
+        </div>
+
+
+        <!-- PRICING -->
+
+        <div class="business-price-grid">
+
+
+            <!-- BASIC -->
+
+            <div
+                class="business-price-card"
+                data-price="650"
+                data-package="Basic">
+
+                <div class="business-card-icon">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+
+                <span class="business-card-type">
+                    BASIC
+                </span>
+
+                <h3>
+                    Basic Business Registration
+                </h3>
+
+                <div class="business-price">
+                    R650
+                    <span>Once-Off</span>
+                </div>
+
+                <p class="business-card-description" data-price="650">
+                    A straightforward registration service for
+                    businesses that need help getting registered.
+                </p>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Company registration assistance
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Company Name Reservation
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Company Registration Documents
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                       SARS Income Tax Registration
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Basic Compliance Guidance
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Digital Delivery of Documents
+                    </li>
+
+                                        <li>
+                        <i class="fas fa-check"></i>
+                        WhatsApp/E-mail Support
+                    </li>
+                </ul>
+<hr>
+      <h7> <strong>Best for</strong>: New businesses that just need to get started.</h7> 
+            </div>
+
+
+            <!-- COMPLETE SETUP -->
+
+           <div
+                class="business-price-card featured"
+                data-price="979"
+                data-package="Complete Setup">
+
+                <div class="business-popular">
+                    MOST POPULAR
+                </div>
+
+                <div class="business-card-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+
+                <span class="business-card-type">
+                    COMPLETE SETUP
+                </span>
+
+                <h3>
+                    Business Registration Starter
+                </h3>
+
+                <div class="business-price">
+                    R979
+                    <span>Once-Off</span>
+                </div>
+
+                <p class="business-card-description">
+                    Our recommended package for entrepreneurs who
+                    want registration assistance plus a more complete
+                    business setup experience.
+                </p>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Everything included in the R650 package
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        CSD Registration
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Business Compliance Checklist
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                         Professional Business E-mail SetUp
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Business Bank Account Guidance
+                    </li>
+
+                                        <li>
+                        <i class="fas fa-check"></i>
+                       Extended WhatsApp/E-mail Support
+                    </li>
+                </ul>
+
+               <hr>
+               <h7><strong>Best for</strong>: Businesses that want to start trading and potentially work with 
+                   larger companies or government.</h7>
+               
+            </div>
+
+
+            <!-- PREMIUM -->
+
+            <div
+                class="business-price-card"
+                data-price="1699"
+                data-package="Premium">
+
+                <div class="business-card-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+
+                <span class="business-card-type">
+                    PREMIUM
+                </span>
+
+                <h3>
+                    Business Registration Premium
+                </h3>
+
+                <div class="business-price">
+                    R1 699
+                    <span>Once-Off</span>
+                </div>
+
+                <p class="business-card-description">
+                    A more comprehensive business setup package for
+                    clients who want additional support beyond basic
+                    registration.
+                </p>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Everything in Popular
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        VAT Registration Assistance*
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        PAYE/UIF/SDL Registration Assistance*
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                         B-BBEE Affidavit Assistance
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Business Compliance Consultation
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Bank Account Documentation Guidance
+                    </li>
+
+                     <li>
+                        <i class="fas fa-check"></i>
+                        Post-Registration Compliance Review
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-check"></i>
+                        30 Days WhatsApp/E-mail Support
+                    </li>
+                </ul>
+
+<hr>
+                <h7<strong>Best for</strong>: Businesses that are already trading or Starting, employing people, 
+                    or expecting significant turnover.</h7>
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <div class="business-price-footer">
+
+            <div>
+                <strong>
+                    <i class="fas fa-circle-info"></i>
+                    Need help choosing?
+                </strong>
+
+                <span>
+                    We'll recommend the right package for your business.
+                </span>
+            </div>
+
+            <a
+                href="#contact"
+                id="business-price-contact"
+                class="business-price-contact">
+
+                Get Started
+                <i class="fas fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="business-price-note">
+            <i class="fas fa-info-circle"></i>
+            Official government/CIPC fees, where applicable, are
+            separate from KASITU's service fee.
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ================= ALARM PRICING MODAL ================= -->
+<div class="alarm-modal" id="alarmPricingModal">
+
+    <div class="alarm-modal-box">
+
+        <button class="alarm-modal-close" id="closeAlarmModal">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <!-- PICTURE PLACEHOLDER -->
+        <div class="alarm-picture">
+            <img src="images/alarms.webp" alt="Security Alarm">
+        </div>
+
+        <span class="alarm-modal-label">SECURITY ALARM</span>
+
+        <h2>Security Alarm</h2>
+
+        <p class="alarm-modal-intro">
+            Affordable security alarm protection for your home,
+            office or small business.
+        </p>
+
+        <div class="alarm-price-box">
+
+            <span>PRICE</span>
+
+            <strong>R229.99</strong>
+            <span>Once-Off</span>
+
+            <small>Installation and additional equipment may be quoted separately.</small>
+
+        </div>
+
+        <a href="#contact" class="alarm-quote-btn">
+            Get Started
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</div>
+
+    <!-- ================= KEY LOCATOR PRICING MODAL ================= -->
+
+<div class="key-locator-modal" id="keyLocatorPricingModal">
+
+    <div class="key-locator-modal-box">
+
+        <button
+            class="key-locator-modal-close"
+            id="closeKeyLocatorModal"
+            aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <!-- PICTURE PLACEHOLDER -->
+        <div class="key-locator-picture">
+
+            <img
+                src="images/key-locator.webp"
+                alt="Bluetooth Key Locator">
+
+        </div>
+
+        <span class="key-locator-label">
+            BLUETOOTH KEY LOCATOR
+        </span>
+
+        <h2>Key Locator</h2>
+
+        <p class="key-locator-intro">
+            Keep track of your important belongings with a
+            compact Bluetooth key locator.
+        </p>
+
+        <div class="key-locator-price">
+
+            <span>PRICE</span>
+
+            <strong>R209.99</strong>
+            <span>Once-Off</span>
+
+            <small>
+                Bluetooth locator device. Availability and
+                delivery may vary.
+            </small>
+
+        </div>
+
+        <a
+            href="#contact"
+            class="key-locator-quote-btn">
+
+            Get Started
+
+            <i class="fas fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+    /* =========================================================
+   KASITU WEBS
+   RESTORE MAINTENANCE SELECTION
+   ---------------------------------------------------------
+   This does NOT change the All Selected Calculator.
+   It only restores the maintenance plan into selectedServices
+   so the existing All Selected Calculator can see it.
+========================================================= */
+
+(function () {
+
+    function restoreMaintenanceSelection() {
+
+        const storageKey =
+            "kasitu-selected-maintenance";
+
+        const raw =
+            localStorage.getItem(storageKey);
+
+        if (!raw) {
+            return;
+        }
+
+        try {
+
+            const selection =
+                JSON.parse(raw);
+
+            const name =
+                String(
+                    selection.name || ""
+                ).trim();
+
+            const price =
+                Number(
+                    selection.price
+                ) || 0;
+
+            if (!name || price <= 0) {
+
+                console.warn(
+                    "KASITU: Invalid maintenance selection.",
+                    selection
+                );
+
+                localStorage.removeItem(
+                    storageKey
+                );
+
+                return;
+            }
+
+
+            /* -----------------------------------------
+               REMOVE ANY PREVIOUS MAINTENANCE PLAN
+               ----------------------------------------- */
+
+            if (
+                typeof selectedServices !== "undefined" &&
+                Array.isArray(selectedServices)
+            ) {
+
+                selectedServices =
+                    selectedServices.filter(
+                        function (service) {
+
+                            if (!service) {
+                                return false;
+                            }
+
+                            const serviceType =
+                                service.type ||
+                                service.category ||
+                                "";
+
+                            const serviceName =
+                                String(
+                                    service.name || ""
+                                );
+
+                            /*
+                             * Keep everything except
+                             * previous maintenance selections.
+                             */
+
+                            return !(
+                                serviceType ===
+                                    "Maintenance & Support"
+
+                                ||
+
+                                serviceName
+                                    .toLowerCase()
+                                    .includes(
+                                        "website maintenance"
+                                    )
+                            );
+
+                        }
+                    );
+
+            }
+
+
+            /* -----------------------------------------
+               ADD MAINTENANCE TO EXISTING SELECTION
+               ----------------------------------------- */
+
+            if (
+                typeof addSelectedService ===
+                "function"
+            ) {
+
+                addSelectedService(
+                    name,
+                    price,
+                    "Maintenance & Support"
+                );
+
+            } else {
+
+                console.error(
+                    "KASITU: addSelectedService() is not available."
+                );
+
+                return;
+            }
+
+
+            /* -----------------------------------------
+               REFRESH ALL SELECTED CALCULATOR
+               ----------------------------------------- */
+
+            if (
+                typeof updateAllSelectedCalculator ===
+                "function"
+            ) {
+
+                updateAllSelectedCalculator();
+
+            }
+
+
+            /* -----------------------------------------
+               REFRESH CONTACT SUMMARY
+               ----------------------------------------- */
+
+            if (
+                typeof updateContactSelectionSummary ===
+                "function"
+            ) {
+
+                updateContactSelectionSummary();
+
+            }
+
+
+            /* -----------------------------------------
+               SHOW CONFIRMATION
+               ----------------------------------------- */
+
+            if (
+                typeof showSelectionInstruction ===
+                "function"
+            ) {
+
+                showSelectionInstruction(
+                    `${name} selected at ${formatCurrency(price)} per month. Please complete your contact details.`
+                );
+
+            }
+
+
+            /* -----------------------------------------
+               REMOVE TEMPORARY STORAGE
+               ----------------------------------------- */
+
+            localStorage.removeItem(
+                storageKey
+            );
+
+
+            console.log(
+                "KASITU: Maintenance selection restored ✓",
+                {
+                    name: name,
+                    price: price,
+                    type: "Maintenance & Support"
+                }
+            );
+
+        } catch (error) {
+
+            console.error(
+                "KASITU: Could not restore maintenance selection.",
+                error
+            );
+
+        }
+
+    }
+
+
+    /* ---------------------------------------------
+       WAIT UNTIL EVERYTHING IS READY
+    --------------------------------------------- */
+
+    if (
+        document.readyState ===
+        "loading"
+    ) {
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            restoreMaintenanceSelection
+        );
+
+    } else {
+
+        restoreMaintenanceSelection();
+
+    }
+
+})();
+    
+/* ==================================================
+   KASITU WEBS
+   BUSINESS REGISTRATION PRICE MODAL
+   Card + Button Click Support
+================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const businessCard =
+        document.querySelector(".business-registration-card");
+
+    const businessRegistrationButton =
+        document.getElementById("business-registration-btn");
+
+    const businessPriceModal =
+        document.getElementById("business-price-modal");
+
+    const businessPriceClose =
+        document.getElementById("business-price-close");
+
+    const businessPriceBackdrop =
+        document.getElementById("business-price-backdrop");
+
+    const businessPriceContact =
+        document.getElementById("business-price-contact");
+
+
+    /* ----------------------------------------------
+       CHECK REQUIRED ELEMENTS
+    ---------------------------------------------- */
+
+    if (!businessCard || !businessPriceModal) {
+        console.warn(
+            "KASITU: Business Registration modal elements missing."
+        );
+        return;
+    }
+
+
+    /* ----------------------------------------------
+       OPEN MODAL
+    ---------------------------------------------- */
+
+    function openBusinessPriceModal(event) {
+
+        if (event) {
+            event.preventDefault();
+        }
+
+        console.log(
+            "KASITU: Opening Business Registration modal..."
+        );
+
+        businessPriceModal.classList.add("active");
+
+        businessPriceModal.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        document.body.classList.add(
+            "business-modal-open"
+        );
+    }
+
+
+    /* ----------------------------------------------
+       CLOSE MODAL
+    ---------------------------------------------- */
+
+    function closeBusinessPriceModal() {
+
+        businessPriceModal.classList.remove(
+            "active"
+        );
+
+        businessPriceModal.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        document.body.classList.remove(
+            "business-modal-open"
+        );
+    }
+
+
+    /* ----------------------------------------------
+       WHOLE CARD CLICK
+    ---------------------------------------------- */
+
+    businessCard.addEventListener(
+        "click",
+        function (event) {
+
+            /*
+             * If the user clicked the button,
+             * the button's own click handler will
+             * handle it.
+             */
+            if (
+                event.target.closest(
+                    "#business-registration-btn"
+                )
+            ) {
+                return;
+            }
+
+            openBusinessPriceModal(event);
+        }
+    );
+
+
+    /* ----------------------------------------------
+       BUTTON CLICK
+    ---------------------------------------------- */
+
+    if (businessRegistrationButton) {
+
+        businessRegistrationButton.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                openBusinessPriceModal(event);
+            }
+        );
+    }
+
+
+    /* ----------------------------------------------
+       CLOSE BUTTON
+    ---------------------------------------------- */
+
+    if (businessPriceClose) {
+
+        businessPriceClose.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                closeBusinessPriceModal();
+            }
+        );
+    }
+
+
+    /* ----------------------------------------------
+       BACKDROP CLICK
+    ---------------------------------------------- */
+
+    if (businessPriceBackdrop) {
+
+        businessPriceBackdrop.addEventListener(
+            "click",
+            function () {
+
+                closeBusinessPriceModal();
+            }
+        );
+    }
+
+
+    /* ----------------------------------------------
+       CONTACT BUTTON
+    ---------------------------------------------- */
+
+    if (businessPriceContact) {
+
+        businessPriceContact.addEventListener(
+            "click",
+            function () {
+
+                closeBusinessPriceModal();
+            }
+        );
+    }
+
+
+    /* ----------------------------------------------
+       ESC KEY
+    ---------------------------------------------- */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                businessPriceModal.classList.contains("active")
+            ) {
+                closeBusinessPriceModal();
+            }
+
+        }
+    );
+
+
+    console.log(
+        "KASITU: Business Registration Price Modal initialized ✓"
+    );
+
+});
+
+/* =========================================================
+   KASITU WEBS
+   LOCATOR + SECURITY ALARM PRICING MODALS
+   FIXED SINGLE-CONTROLLER SYSTEM
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const locatorButton = document.getElementById("key-locator-pricing-btn");
+    const locatorModal = document.getElementById("keyLocatorPricingModal");
+    const locatorClose = document.getElementById("closeKeyLocatorModal");
+    const locatorQuote = document.querySelector(".key-locator-quote-btn");
+
+    const alarmButton = document.getElementById("alarm-pricing-btn");
+    const alarmModal = document.getElementById("alarmPricingModal");
+    const alarmClose = document.getElementById("closeAlarmModal");
+    const alarmQuote = document.querySelector(".alarm-quote-btn");
+
+    /* -----------------------------------------------------
+       OPEN
+    ----------------------------------------------------- */
+    function openServiceModal(modal) {
+        if (!modal) return;
+
+        /* Close the other service modal first */
+        if (modal !== locatorModal && locatorModal) {
+            locatorModal.classList.remove("active");
+            locatorModal.setAttribute("aria-hidden", "true");
+        }
+
+        if (modal !== alarmModal && alarmModal) {
+            alarmModal.classList.remove("active");
+            alarmModal.setAttribute("aria-hidden", "true");
+        }
+
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("kasitu-service-modal-open");
+        document.documentElement.classList.add("kasitu-service-modal-open");
+    }
+
+    /* -----------------------------------------------------
+       CLOSE
+    ----------------------------------------------------- */
+    function closeServiceModal(modal) {
+        if (!modal) return;
+
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+
+        const anyServiceModalOpen =
+            (locatorModal && locatorModal.classList.contains("active")) ||
+            (alarmModal && alarmModal.classList.contains("active"));
+
+        if (!anyServiceModalOpen) {
+            document.body.classList.remove("kasitu-service-modal-open");
+            document.documentElement.classList.remove("kasitu-service-modal-open");
+        }
+    }
+
+    /* -----------------------------------------------------
+       LOCATOR OPEN
+    ----------------------------------------------------- */
+    if (locatorButton && locatorModal) {
+        locatorButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            openServiceModal(locatorModal);
+        });
+    }
+
+    /* -----------------------------------------------------
+       LOCATOR CLOSE BUTTON
+       This was missing in the previous code.
+    ----------------------------------------------------- */
+    if (locatorClose && locatorModal) {
+        locatorClose.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            closeServiceModal(locatorModal);
+        });
+    }
+
+    /* -----------------------------------------------------
+       ALARM OPEN
+    ----------------------------------------------------- */
+    if (alarmButton && alarmModal) {
+        alarmButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            openServiceModal(alarmModal);
+        });
+    }
+
+    /* -----------------------------------------------------
+       ALARM CLOSE BUTTON
+       This was missing in the previous code.
+    ----------------------------------------------------- */
+    if (alarmClose && alarmModal) {
+        alarmClose.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            closeServiceModal(alarmModal);
+        });
+    }
+
+    /* -----------------------------------------------------
+       LOCATOR GET STARTED
+    ----------------------------------------------------- */
+    if (locatorQuote && locatorModal) {
+        locatorQuote.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (typeof addSelectedService === "function") {
+                addSelectedService(
+                    "Bluetooth Key Locator",
+                    209.99,
+                    "Product"
+                );
+            }
+
+            closeServiceModal(locatorModal);
+
+            if (typeof goToContactWithSelection === "function") {
+                goToContactWithSelection(
+                    "You selected a Bluetooth Key Locator. Please fill in your name, email, phone number and tell us how many units you need and any delivery requirements."
+                );
+            } else {
+                const contact = document.getElementById("contact");
+                if (contact) {
+                    setTimeout(function () {
+                        contact.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }, 120);
+                }
+            }
+        });
+    }
+
+    /* -----------------------------------------------------
+       ALARM GET STARTED
+    ----------------------------------------------------- */
+    if (alarmQuote && alarmModal) {
+        alarmQuote.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (typeof addSelectedService === "function") {
+                addSelectedService(
+                    "Security Alarm",
+                    229.99,
+                    "Product"
+                );
+            }
+
+            closeServiceModal(alarmModal);
+
+            if (typeof goToContactWithSelection === "function") {
+                goToContactWithSelection(
+                    "You selected a Security Alarm. Please fill in your name, email, phone number and tell us whether the alarm is for a home, office or business, plus any installation requirements."
+                );
+            } else {
+                const contact = document.getElementById("contact");
+                if (contact) {
+                    setTimeout(function () {
+                        contact.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }, 120);
+                }
+            }
+        });
+    }
+
+    /* -----------------------------------------------------
+       CLICK BACKDROP TO CLOSE
+    ----------------------------------------------------- */
+    [locatorModal, alarmModal].forEach(function (modal) {
+        if (!modal) return;
+
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                closeServiceModal(modal);
+            }
+        });
+    });
+
+    /* -----------------------------------------------------
+       ESCAPE KEY
+    ----------------------------------------------------- */
+    document.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape") return;
+
+        if (locatorModal && locatorModal.classList.contains("active")) {
+            closeServiceModal(locatorModal);
+        }
+
+        if (alarmModal && alarmModal.classList.contains("active")) {
+            closeServiceModal(alarmModal);
+        }
+    });
+
+    /* -----------------------------------------------------
+       INITIAL STATE
+    ----------------------------------------------------- */
+    if (locatorModal) {
+        locatorModal.classList.remove("active");
+        locatorModal.setAttribute("aria-hidden", "true");
+    }
+
+    if (alarmModal) {
+        alarmModal.classList.remove("active");
+        alarmModal.setAttribute("aria-hidden", "true");
+    }
+
+    console.log(
+        "KASITU: Locator + Alarm pricing modals fixed and initialized ✓"
+    );
+});
+
+    /* ================= MAINTENANCE CARD ================= */
+document.addEventListener("DOMContentLoaded", function () {
+
+    const maintenanceCard =
+        document.getElementById("maintenanceServiceCard");
+
+    if (!maintenanceCard) return;
+
+
+    maintenanceCard.addEventListener("click", function (event) {
+
+        /*
+         * If the user clicked the actual button,
+         * let the button handle the navigation normally.
+         */
+        if (event.target.closest(".service-learn-btn")) {
+            return;
+        }
+
+        /* Clicking anywhere else on the card */
+        window.location.href = "maintenance.html";
+
+    });
+
+});
+
+/* ==================================================
+   BUSINESS REGISTRATION PACKAGE CARDS
+   Each card has its own name + price
+================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const businessCards =
+        document.querySelectorAll(".business-price-card");
+
+    if (!businessCards.length) {
+        console.warn(
+            "KASITU: Business Registration cards not found."
+        );
+        return;
+    }
+
+    businessCards.forEach(function (card) {
+
+        /* Make the whole card selectable */
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
+
+        /* ------------------------------------------------
+           CARD CLICK
+        ------------------------------------------------ */
+
+        card.addEventListener("click", function (event) {
+
+            if (event.target.closest("a, button")) {
+                return;
+            }
+
+            selectBusinessRegistrationCard(card);
+
+        });
+
+
+        /* ------------------------------------------------
+           KEYBOARD SUPPORT
+        ------------------------------------------------ */
+
+        card.addEventListener("keydown", function (event) {
+
+            if (
+                event.key === "Enter" ||
+                event.key === " "
+            ) {
+
+                event.preventDefault();
+
+                selectBusinessRegistrationCard(card);
+
+            }
+
+        });
+
+    });
+
+
+    /* ==================================================
+       SELECT BUSINESS REGISTRATION PACKAGE
+    ================================================== */
+
+    function selectBusinessRegistrationCard(card) {
+
+        const heading =
+            card.querySelector("h3");
+
+        const priceElement =
+            card.querySelector(".business-price");
+
+        const typeElement =
+            card.querySelector(".business-card-type");
+
+        if (!heading || !priceElement) {
+            console.warn(
+                "KASITU: Business Registration card is missing heading or price."
+            );
+            return;
+        }
+
+
+        /* ------------------------------------------------
+           PACKAGE NAME
+        ------------------------------------------------ */
+
+        const packageName =
+            heading.textContent
+                .replace(/\s+/g, " ")
+                .trim();
+
+
+        /* ------------------------------------------------
+           PACKAGE TYPE
+           BASIC / COMPLETE SETUP / PREMIUM
+        ------------------------------------------------ */
+
+        const packageType =
+            typeElement
+                ? typeElement.textContent
+                    .replace(/\s+/g, " ")
+                    .trim()
+                : "";
+
+
+        /* ------------------------------------------------
+           PRICE
+           
+           Example:
+           R650
+           R950
+           R1 500
+        ------------------------------------------------ */
+
+        const priceText =
+            priceElement.textContent
+                .replace(/[^\d]/g, "");
+
+        const price =
+            Number(priceText);
+
+
+        if (!price || price <= 0) {
+
+            console.warn(
+                "KASITU: Invalid Business Registration price:",
+                priceText
+            );
+
+            return;
+
+        }
+
+
+        /* ------------------------------------------------
+           UNIQUE SERVICE NAME
+           
+           This is what will appear in the quotation
+           and calculator.
+        ------------------------------------------------ */
+
+        const serviceName =
+            `Business Registration — ${packageName}`;
+
+
+        /* ------------------------------------------------
+           REMOVE PREVIOUS BUSINESS REGISTRATION
+           
+           This prevents Basic + Premium being selected
+           at the same time.
+        ------------------------------------------------ */
+
+        if (
+            typeof selectedServices !== "undefined" &&
+            Array.isArray(selectedServices)
+        ) {
+
+            for (
+                let i = selectedServices.length - 1;
+                i >= 0;
+                i--
+            ) {
+
+                const existing =
+                    selectedServices[i];
+
+                if (
+                    existing &&
+                    (
+                        existing.type ===
+                        "Business Registration"
+
+                        ||
+
+                        existing.category ===
+                        "Business Registration"
+
+                        ||
+
+                        (
+                            typeof existing.name === "string" &&
+                            existing.name
+                                .toLowerCase()
+                                .includes(
+                                    "business registration"
+                                )
+                        )
+                    )
+                ) {
+
+                    selectedServices.splice(i, 1);
+
+                }
+
+            }
+
+        }
+
+
+        /* ------------------------------------------------
+           ADD THE ACTUAL PACKAGE
+        ------------------------------------------------ */
+
+        if (
+            typeof addSelectedService ===
+            "function"
+        ) {
+
+            addSelectedService(
+                serviceName,
+                price,
+                "Business Registration"
+            );
+
+        }
+
+
+        /* ------------------------------------------------
+           SAVE EXTRA PACKAGE INFORMATION
+           
+           Useful for quotation generation and WhatsApp.
+        ------------------------------------------------ */
+
+        window.selectedBusinessRegistration = {
+
+            name: serviceName,
+
+            packageName: packageName,
+
+            packageType: packageType,
+
+            price: price
+
+        };
+
+
+        /*
+         * Keep this variable for compatibility
+         * with your existing code.
+         */
+
+        window.selectedBusinessRegistrationPackage =
+            packageName;
+
+
+        /* ------------------------------------------------
+           CLOSE MODAL
+        ------------------------------------------------ */
+
+        const modal =
+            document.getElementById(
+                "business-price-modal"
+            );
+
+        if (modal) {
+
+            modal.classList.remove("active");
+
+            modal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+        }
+
+
+        document.body.classList.remove(
+            "business-modal-open"
+        );
+
+
+        /* ------------------------------------------------
+           CONTACT MESSAGE
+        ------------------------------------------------ */
+
+        const contactMessage =
+            `You selected ${serviceName} (${formatCurrency(price)}). ` +
+            `Please fill in your name, email, phone number and ` +
+            `tell us any important details about your business registration needs.`;
+
+
+        /* ------------------------------------------------
+           GO TO CONTACT
+        ------------------------------------------------ */
+
+        if (
+            typeof goToContactWithSelection ===
+            "function"
+        ) {
+
+            goToContactWithSelection(
+                contactMessage
+            );
+
+        } else {
+
+            const contact =
+                document.getElementById(
+                    "contact"
+                );
+
+            if (contact) {
+
+                contact.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+
+        }
+
+
+        /* ------------------------------------------------
+           UPDATE SUMMARY
+        ------------------------------------------------ */
+
+        if (
+            typeof updateContactSelectionSummary ===
+            "function"
+        ) {
+
+            updateContactSelectionSummary();
+
+        }
+
+    }
+
+});
+    
+/* ==================================================
+   CREATIVE DESIGN PACKAGE CARDS
+   Click card → save selection → Contact
+================================================== */
+
+document
+    .querySelectorAll(".creative-price-card")
+    .forEach(card => {
+
+        card.addEventListener("click", function(event) {
+
+            if (
+                event.target.closest("a, button")
+            ) {
+                return;
+            }
+
+            const heading =
+                card.querySelector("h3");
+
+            const priceElement =
+                card.querySelector(".creative-price");
+
+            if (!heading || !priceElement) {
+                return;
+            }
+
+            const name =
+                heading.textContent
+                    .replace(/\s+/g, " ")
+                    .trim();
+
+            const priceText =
+                priceElement.textContent
+                    .replace(/[^\d.]/g, "");
+
+            const price =
+                Number(priceText);
+
+            addSelectedService(
+                name,
+                price,
+                "Creative Design"
+            );
+
+            /*
+             * Close Creative Studio modal.
+             * Use your existing close function if available.
+             */
+            const creativeModal =
+                document.getElementById(
+                    "creative-price-modal"
+                );
+
+            if (creativeModal) {
+
+                creativeModal.classList.remove(
+                    "active"
+                );
+
+                creativeModal.setAttribute(
+                    "aria-hidden",
+                    "true"
+                );
+
+            }
+
+            goToContactWithSelection(
+                `You selected ${name}. Please fill in your name, email, phone number and describe what you would like us to design.`
+            );
+
+        });
+
+    });
+
+  /* ==================================================
+   CONTACT SELECTION SUMMARY
+================================================== */
+
+function updateContactSelectionSummary() {
+
+    const box =
+        document.getElementById(
+            "contact-selection-summary"
+        );
+
+    const details =
+        document.getElementById(
+            "selection-summary-details"
+        );
+
+    const total =
+        document.getElementById(
+            "selection-summary-total"
+        );
+
+    if (!box || !details || !total) {
+        return;
+    }
+
+    const summary =
+        getSelectionSummaryText();
+
+    /*
+     * Nothing selected.
+     */
+    if (!summary) {
+
+        box.hidden = true;
+
+        return;
+    }
+
+    box.hidden = false;
+
+    details.textContent =
+        summary;
+
+    total.textContent =
+        `Estimated Total: ${formatCurrency(
+            calculateUnifiedTotal()
+        )}`;
+
+}
+
+  function showSelectionInstruction(text) {
+
+    const instruction =
+        document.getElementById(
+            "selection-summary-instruction"
+        );
+
+    if (instruction) {
+        instruction.textContent = text;
+    }
+
+}  
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const openBtn = document.getElementById("creative-explore-btn");
+    const modal = document.getElementById("creative-price-modal");
+    const closeBtn = document.getElementById("creative-price-close");
+    const backdrop = document.getElementById("creative-price-backdrop");
+
+    if (!openBtn || !modal) return;
+
+    openBtn.addEventListener("click", function () {
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+    });
+
+    function closeCreativeModal() {
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", closeCreativeModal);
+    }
+
+    if (backdrop) {
+        backdrop.addEventListener("click", closeCreativeModal);
+    }
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.classList.contains("active")) {
+            closeCreativeModal();
+        }
+    });
+});
+
+    /* WhatsApp click handler: opens the configured business chat. */
+(function () {
+  const init = () => {
+    const button = document.getElementById("floating-whatsapp");
+    if (!button || button.dataset.whatsappReady === "true") return;
+    button.dataset.whatsappReady = "true";
+    button.addEventListener("click", () => {
+      const phone = "27794380103"; // South African number, digits only
+      const message = encodeURIComponent("Hi KASITU Webs, I'd like to enquire about your services.");
+      window.open(`https://wa.me/${phone}?text=${message}`, "_blank", "noopener,noreferrer");
+    });
+  };
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+})();
+
+
+</script>
+
+<script src="script.js"></script>
+<script src="legal-footer.js"></script>
+  
+</body>
+
+</html>  
