@@ -100,51 +100,19 @@ const projects = {
     },
 
 
-    thutis: {
+    kamatla: {
 
-        title: "Thuti's Project",
+        title: "KAMATLA Holdings",
 
-        category: "Business",
+        category: "Corporate",
 
-        type: "Business Website",
-
-        description:
-            "A modern business website created to showcase the store and its products online, allowing customers to browse products and categories, discover the store’s location, and easily access contact details for enquiries.",
-
-        url:
-            "https://kasitu.free.nf/?i=1",
-
-        technologies: [
-            "WordPress",
-            "CSS",
-            "JavaScript"
-        ],
-
-        features: [
-            "Product catalogue",
-            "Product categories",
-            "Business information",
-            "Store location & directions",
-            "Contact information",
-            "Responsive design"
-        ]
-
-    },
-
-
-    practice: {
-
-        title: "Thuti's eCommerce Demo",
-
-        category: "PRACTICE PROJECT",
-
-        type: "eCommerce Practice Project",
+        type: "Corporate Website & Brand Identity",
 
         description:
-            "A practice eCommerce project created to explore product catalogues, shopping cart functionality, checkout workflows and online shopping experiences.",
+            "KAMATLA Holdings is a diversified holdings group with seven divisions: agriculture, logistics, construction, engineering, mining, funeral care and tyre services. We designed its brand identity and built a corporate website that presents every division, the group's mission and an enquiry form where customers choose the division they need.",
 
         url:
-            "https://thutis.onrender.com/",
+            "https://holdings-lfqb.onrender.com/",
 
         technologies: [
             "HTML",
@@ -153,12 +121,42 @@ const projects = {
         ],
 
         features: [
-            "Product catalogue",
-            "Product search",
-            "Shopping cart",
-            "Checkout",
-            "Online shopping workflow",
-            "Responsive interface"
+            "Seven divisions presented clearly",
+            "Division-based enquiry form",
+            "Click-to-call and email contact details",
+            "Brand identity and logo",
+            "Responsive design"
+        ]
+
+    },
+
+
+    "kamatla-brand": {
+
+        title: "KAMATLA Holdings Brand Identity",
+
+        category: "Branding",
+
+        type: "Logo & Brand Identity",
+
+        description:
+            "A complete brand identity for KAMATLA Holdings: a monogram logo, wordmark and six division icons for agriculture, logistics, construction, engineering, mining and funeral services, paired with the tagline Building Resources, Connecting, Empowering Communities.",
+
+        url:
+            "",
+
+        technologies: [
+            "Logo design",
+            "Brand identity",
+            "Print-ready files"
+        ],
+
+        features: [
+            "Monogram logo",
+            "Wordmark and colour palette",
+            "Six division icons",
+            "Brand tagline",
+            "Digital and print versions"
         ]
 
     }
@@ -344,13 +342,19 @@ function loadProject(project) {
 
 
     browserUrl.textContent =
-        project.url;
+        project.url || "KAMATLA Holdings";
 
 
     /* LOAD LIVE WEBSITE */
 
-    frame.src =
-        project.url;
+    if (project.url) {
+        frame.src = project.url;
+    } else {
+        frame.srcdoc = '<body style="margin:0;display:grid;place-items:center;height:100vh;background:#fff"><img src="../images/kamatla-holdings.webp" alt="KAMATLA Holdings" style="max-width:70%;max-height:92%"></body>';
+        browserUrl.textContent = "KAMATLA Holdings";
+        openProject.removeAttribute("href");
+        openProjectBottom.removeAttribute("href");
+    }
 
 
     /* SAVE PROJECT */

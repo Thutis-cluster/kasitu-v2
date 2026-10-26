@@ -11,4 +11,7 @@ var f=document.getElementById('f');
 if(f)f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
 var t='Hi KASITU Webs, my name is '+d.get('n')+'.\nI am interested in: '+d.get('p')+'.\n\n'+d.get('m');
 window.open('https://wa.me/27794380103?text='+encodeURIComponent(t),'_blank')});
+var em=document.getElementById('em');
+if(em&&f)em.addEventListener('click',function(){if(!f.reportValidity())return;var d=new FormData(f);
+location.href='mailto:info@kasituwebs.co.za?subject='+encodeURIComponent('Quote request: '+d.get('p'))+'&body='+encodeURIComponent('Name: '+d.get('n')+'\n\n'+d.get('m'))});
 })();

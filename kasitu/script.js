@@ -728,30 +728,26 @@ const projectData = {
     },
 
 
-    store: {
+    kamatla: {
 
         title:
-            "Local Store Website",
+            "KAMATLA Holdings",
 
         tag:
-            "Business Website",
+            "Corporate Website & Brand Identity",
 
         description:
-            "A simple business website created for a local store selling vegetables, chicken, chicken feeds, eggs, dog food and tissues. The website gives the business an online presence, allows customers to see what is available in the store and helps customers find the physical store and contact details.",
+            "KAMATLA Holdings is a diversified holdings group with seven divisions: agriculture, logistics, construction, engineering, mining, funeral care and tyre services. We designed its brand identity and built a corporate website that presents every division, the group’s mission and an enquiry form where customers choose the division they need.",
 
         features: [
 
-            "Product showcase",
+            "Seven divisions presented clearly",
 
-            "Product Categories",
+            "Division-based enquiry form",
 
-            "Business information",
+            "Click-to-call and email contact details",
 
-            "Store location information",
-
-           "Business contact information",
-
-            "Customer-friendly navigation",
+            "Brand identity and logo",
 
             "Mobile-friendly website"
 
@@ -759,7 +755,7 @@ const projectData = {
 
         technologies: [
 
-            "WordPress",
+            "HTML",
 
             "CSS3",
 
@@ -770,7 +766,7 @@ const projectData = {
         ],
 
         url:
-            "https://kasitu.free.nf/?i=2"
+            "https://holdings-lfqb.onrender.com/"
 
     }
 
