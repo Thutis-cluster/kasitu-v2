@@ -1004,7 +1004,7 @@ const packagePrices = {
 
 "Online Store": 5999,
 
-"Online Store Premium": 7999
+"Online Store Premium": 11999
 
 };
 
@@ -5451,3 +5451,16 @@ if (document.readyState === "loading") {
 } else {
     restoreMaintenanceSelection();
 }
+
+
+/* Close the mobile menu when the page scrolls */
+(function(){
+    var y=window.scrollY;
+    window.addEventListener("scroll",function(){
+        if(typeof mobileMenu!=="undefined"&&mobileMenu&&mobileMenu.classList.contains("mobile-open")&&Math.abs(window.scrollY-y)>8){
+            mobileMenu.classList.remove("mobile-open");
+            if(typeof menuBtn!=="undefined"&&menuBtn){menuBtn.classList.remove("open");menuBtn.setAttribute("aria-expanded","false");}
+        }
+        if(!(typeof mobileMenu!=="undefined"&&mobileMenu&&mobileMenu.classList.contains("mobile-open")))y=window.scrollY;
+    },{passive:true});
+})();

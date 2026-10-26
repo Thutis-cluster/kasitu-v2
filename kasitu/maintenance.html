@@ -4335,6 +4335,16 @@
 
     </script>
 
+<script>
+(function(){var y=window.scrollY;
+window.addEventListener("scroll",function(){
+ var nl=document.querySelector(".nav-links"),t=document.getElementById("menuToggle");
+ if(nl&&nl.classList.contains("active")){
+  if(Math.abs(window.scrollY-y)>8){nl.classList.remove("active");document.body.classList.remove("menu-open");
+   var i=t&&t.querySelector("i");if(i)i.className="fas fa-bars";if(t)t.setAttribute("aria-expanded","false");}
+ }else{y=window.scrollY}
+},{passive:true});})();
+</script>
 </body>
 
 </html>
