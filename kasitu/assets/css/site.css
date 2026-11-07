@@ -219,3 +219,124 @@ body.modal-open{overflow:hidden}
   .nav{padding-left:16px;padding-right:8px}
   .menu{width:40px;height:40px;border-radius:9px}
 }
+
+
+/* Mobile navigation and pricing modal refinements */
+@media (max-width: 720px) {
+  header .wrap.nav {
+    width: 100%;
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 6px;
+    gap: 12px;
+  }
+  header .nav .menu {
+    display: flex;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+  }
+  header .nav .logo {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .service-modal {
+    padding: max(6px, env(safe-area-inset-top)) 6px max(6px, env(safe-area-inset-bottom));
+    align-items: center;
+    overflow-y: auto;
+  }
+  .service-modal__panel {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100dvh - 12px);
+    padding: 24px 14px 18px;
+    border-radius: 13px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .service-modal__panel h2 {
+    font-size: clamp(1.35rem, 6vw, 1.8rem);
+    line-height: 1.15;
+    margin-right: 34px;
+    overflow-wrap: anywhere;
+  }
+  .modal-eyebrow {
+    font-size: .68rem;
+    letter-spacing: .09em;
+  }
+  .modal-intro {
+    font-size: .92rem;
+    line-height: 1.5;
+  }
+  .modal-price-list {
+    width: 100%;
+    gap: 9px;
+  }
+  .modal-price {
+    width: 100%;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 7px;
+    padding: 13px 12px;
+  }
+  .modal-price > div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .modal-price h3 {
+    font-size: 1.02rem;
+    line-height: 1.25;
+  }
+  .modal-price p {
+    max-width: none;
+    font-size: .86rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    margin: 0;
+  }
+  .modal-price strong {
+    display: block;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  .modal-note {
+    font-size: .84rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+  .service-modal__close {
+    right: 10px;
+    top: 9px;
+    width: 36px;
+    height: 36px;
+  }
+  .service-modal__panel .modal-cta {
+    display: block;
+    width: 100%;
+    white-space: normal;
+    padding: 12px 14px;
+  }
+}
+@media (max-width: 380px) {
+  header .wrap.nav {
+    padding-left: 12px;
+    padding-right: 4px;
+  }
+  .service-modal__panel {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
