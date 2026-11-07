@@ -213,3 +213,9 @@ footer{padding-bottom:84px}
 .modal-cta{display:inline-block;text-align:center}
 body.modal-open{overflow:hidden}
 @media(max-width:560px){.service-modal{padding:10px}.service-modal__panel{padding:24px 16px;border-radius:14px;max-height:92vh}.modal-price{padding:14px;gap:12px}.modal-price p{font-size:.88rem}.modal-price strong{font-size:1.35rem}}
+
+/* Small-phone edge-aligned hamburger */
+@media(max-width:560px){
+  .nav{padding-left:16px;padding-right:8px}
+  .menu{width:40px;height:40px;border-radius:9px}
+}
