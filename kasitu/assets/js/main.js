@@ -23,4 +23,22 @@ window.open('https://wa.me/27794380103?text='+encodeURIComponent(t),'_blank')});
 var em=document.getElementById('em');
 if(em&&f)em.addEventListener('click',function(){if(!f.reportValidity())return;var d=new FormData(f);
 location.href='mailto:info@kasituwebs.co.za?subject='+encodeURIComponent('Quote request: '+d.get('p'))+'&body='+encodeURIComponent('Name: '+d.get('n')+'\n\n'+d.get('m'))});
+
+var activeModal=null,previousFocus=null;
+function closeModal(){
+ if(!activeModal)return;
+ activeModal.hidden=true;activeModal=null;document.body.classList.remove('modal-open');
+ if(previousFocus&&previousFocus.focus)previousFocus.focus();
+}
+document.querySelectorAll('[data-open-modal]').forEach(function(trigger){
+ trigger.addEventListener('click',function(){
+ var modal=document.getElementById(trigger.getAttribute('data-open-modal'));
+ if(!modal)return;
+ if(activeModal)closeModal();
+ previousFocus=trigger;activeModal=modal;modal.hidden=false;document.body.classList.add('modal-open');
+ var panel=modal.querySelector('[role="dialog"]');if(panel)panel.focus();
+ });
+});
+document.querySelectorAll('[data-close-modal]').forEach(function(el){el.addEventListener('click',closeModal)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
 })();
