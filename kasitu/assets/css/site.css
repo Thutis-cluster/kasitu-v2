@@ -188,3 +188,28 @@ nav li:last-child{margin-top:8px}nav li:last-child a{text-align:center}
 .fab{padding:10px 14px;font-size:.88rem}.fab svg{width:16px;height:16px}.fab.call{display:inline-flex}
 footer{padding-bottom:84px}
 }
+
+/* Service pricing modals */
+.svc .modal-link{display:block;margin-top:12px;padding:0;border:0;background:none;color:var(--blue);font:700 .95rem var(--b);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.modal-link:hover{color:var(--blue-d)}
+.service-modal[hidden]{display:none}
+.service-modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px}
+.service-modal__backdrop{position:absolute;inset:0;background:rgba(5,13,26,.76);backdrop-filter:blur(4px)}
+.service-modal__panel{position:relative;z-index:1;width:min(720px,100%);max-height:min(88vh,900px);overflow:auto;background:#fff;color:var(--ink);border-radius:18px;padding:clamp(22px,4vw,38px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+.service-modal__close{position:absolute;right:16px;top:12px;width:40px;height:40px;border:0;border-radius:50%;background:#EEF1F6;color:var(--ink);font-size:1.8rem;line-height:1;cursor:pointer}
+.modal-eyebrow{font-size:.76rem;font-weight:800;letter-spacing:.12em;color:var(--blue);margin:0 46px 8px 0}
+.service-modal__panel h2{margin:0 44px 8px 0}
+.modal-intro{color:var(--ink2);margin:0 0 20px}
+.modal-price-list{display:grid;gap:10px}
+.modal-price{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 19px;border-radius:12px;background:#EDF2F9}
+.modal-price h3{font-size:1.13rem;margin:0 0 4px}
+.modal-price p{font-size:.94rem;line-height:1.45;color:var(--ink2);max-width:58ch}
+.modal-price strong{font:800 clamp(1.45rem,4vw,2rem) var(--h);white-space:nowrap}
+.modal-price.popular{background:var(--sun);color:var(--ink)}
+.modal-price.popular p{color:#243047}
+.modal-price.popular small{display:block;font-size:.7rem;font-weight:800;letter-spacing:.1em;margin-bottom:3px}
+.modal-price.compact{padding-top:12px;padding-bottom:12px}
+.modal-note{margin:16px 0;color:var(--ink2);font-size:.9rem}
+.modal-cta{display:inline-block;text-align:center}
+body.modal-open{overflow:hidden}
+@media(max-width:560px){.service-modal{padding:10px}.service-modal__panel{padding:24px 16px;border-radius:14px;max-height:92vh}.modal-price{padding:14px;gap:12px}.modal-price p{font-size:.88rem}.modal-price strong{font-size:1.35rem}}
